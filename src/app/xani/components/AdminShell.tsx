@@ -26,7 +26,7 @@ export default function AdminShell({ children }: AdminShellProps) {
             <h2 className="mb-4 text-xs font-semibold uppercase tracking-[0.25em] text-slate-500">
               Yönetim Menüsü
             </h2>
-        
+            <MenuBar />
           </div>
         </aside>
 
