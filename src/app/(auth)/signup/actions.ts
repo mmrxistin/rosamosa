@@ -59,8 +59,8 @@ export async function signUp(
       };
     }
 
-    await prisma.$transaction(async (tx) => {
-      await tx.user.create({
+    const createdUser = await prisma.$transaction(async (tx) => {
+      return tx.user.create({
         data: {
           username,
           displayName: username,
@@ -70,7 +70,7 @@ export async function signUp(
       });
     });
 
-    const session = await lucia.createSession(existingUser.id, {});
+    const session = await lucia.createSession(createdUser.id, {});
     const sessionCookie = lucia.createSessionCookie(session.id);
     cookies().set(
       sessionCookie.name,
