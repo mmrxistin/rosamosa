@@ -7,7 +7,7 @@
 
 import { validateRequest } from "@/auth";
 import prisma from "@/lib/prisma";
-import { getXaneInclude, XanePage } from "@/lib/types";
+import { getRojnameInclude, RojnamePage } from "@/lib/types";
 import { NextRequest } from "next/server";
 
 export async function GET(req: NextRequest) {
@@ -38,14 +38,16 @@ export async function GET(req: NextRequest) {
           {
             user: {
               displayName: {
-                search: searchQuery,
+                contains: q,
+                mode: "insensitive",
               },
             },
           },
           {
             user: {
               username: {
-                search: searchQuery,
+                contains: q,
+                mode: "insensitive",
               },
             },
           },
