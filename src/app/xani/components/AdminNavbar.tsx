@@ -16,30 +16,30 @@ export default function AdminNavbar() {
   return (
     <Navbar bg="light" expand="lg" className="shadow-sm mb-4">
       <Container fluid>
-        <Navbar.Brand as={Link} href="/mmdashboard" className="fw-bold">
+        <Navbar.Brand as={Link} href="/xani" className="fw-bold">
           Yekazad Admin
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="admin-navbar-nav" />
         <Navbar.Collapse id="admin-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link as={Link} href="/mmdashboard">
+            <Nav.Link as={Link} href="/xani">
               Dashboard
             </Nav.Link>
-            <Nav.Link as={Link} href="/users">
+            <Nav.Link as={Link} href="/xani/users">
               Kullanıcılar
             </Nav.Link>
             <NavDropdown title="Blog" id="nav-dropdown-blog">
-              <NavDropdown.Item as={Link} href="/posts">
+              <NavDropdown.Item as={Link} href="/xani/posts">
                 Blog Yazıları
               </NavDropdown.Item>
-              <NavDropdown.Item as={Link} href="/posts/new">
+              <NavDropdown.Item as={Link} href="/xani/admin/news">
                 Yeni Yazı
               </NavDropdown.Item>
               <NavDropdown.Item as={Link} href="/categories">
                 Kategoriler
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link as={Link} href="/reports">
+            <Nav.Link as={Link} href="/xani/reports">
               Raporlar
             </Nav.Link>
           </Nav>
