@@ -38,13 +38,13 @@ export const lucia = new Lucia(adapter, {
 declare module "lucia" {
   interface Register {
     Lucia: typeof lucia;
-    UserId: number;
+    UserId: string;
     DatabaseUserAttributes: DatabaseUserAttributes;
   }
 }
 
 interface DatabaseUserAttributes {
-  id: number;
+  id: string;
   username: string;
   displayName: string;
   avatarUrl: string | null;
