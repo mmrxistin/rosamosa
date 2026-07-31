@@ -50,7 +50,7 @@ export async function login(
       sessionCookie.attributes,
     );
 
-    return redirect("/malper");
+    return redirect("/xani");
   } catch (error) {
     if (isRedirectError(error)) throw error;
     console.error(error);

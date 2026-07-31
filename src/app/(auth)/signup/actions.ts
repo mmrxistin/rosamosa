@@ -1,9 +1,9 @@
 // Elhamdulillahirrabbulalemin
 // Esselatu vesselamu ala seyyidina Muhammedin ve ala alihi ve sahbihi ecmain
 // Subhanallah, Elhamdulillah, Allahu Ekber
-// La ilahe illallah 
+// La ilahe illallah
 // Allahu Ekber, Allahu Ekber, Allahu Ekber, La ilahe illallah
-// Bila Allah Azze ve Celle me ji sunneta Resulullah Muhammed (s.a.v) neqetine, amin rabbal alemin 
+// Bila Allah Azze ve Celle me ji sunneta Resulullah Muhammed (s.a.v) neqetine, amin rabbal alemin
 // Xeyni Allah tu Xweda tune
 
 "use server";
@@ -78,7 +78,7 @@ export async function signUp(
       sessionCookie.attributes,
     );
 
-    return redirect("/malper");
+    return redirect("/xani");
   } catch (error) {
     if (isRedirectError(error)) throw error;
     console.error(error);

@@ -8,8 +8,9 @@
 // La ilahe illAllah u vahdehu la şerike leh, lehul mülkü ve lehul hamdü 
 //yuhyi ve yumit ,biyadihil xayru ve huve ala kulli şeyin kadir.
 //  ve hüve ala külli şeyin kadir.
-// Elhamdulillah ya Samed i Vehhab i Quddus i  Erhamer Rahimin i Gafur i Rahim i Halim i Azim i Aziz i Hakim i Latif i Hafiz i Kadir i Muheymin i Ehed  i Alim i Basir i Sami i Halim i Gani
+// Elhamdulillah ya Samed i Vehhab i Quddus i  Erhamer Rahimin i Gafur i Rahim i Rezak i Halim i Azim i Aziz i Hakim i Latif i Hafiz i Kadir i Muheymin i Ehed  i Alim i Basir i Sami i Halim i Gani
 // La ilahe illAllah u vahdehu la şerike leh, lehul mülkü ve lehul hamdü
+// Elhamdulillah ya Ferd i Erhamer Rahimin i Quddus i Şafi i Afu i Vehhab i  Hamidun Mecid i Ehed i Kerim i Rezzak i Azim i Tevvab i Samed i Gani i Mutekkebbir i Rauf i Alim i Ala
 // Rabbena Ve Lekel Hamd . İnneke Hamidun Mecid
 // Allahu Ekber Allahu Ekber Allahu Ekber La ilahe illAllah
 // Allahu Ekber Allahu Ekber ve Lillahil Hamd

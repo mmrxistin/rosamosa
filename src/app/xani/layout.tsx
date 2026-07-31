@@ -1,6 +1,6 @@
-// Bismillahirahmanirahim 
+// Bismillahirahmanirahim
 // ElHAMDULİLLAHİRABBULALEMİN
-// Es-selatu ve Es-selamu ala Resulina Muhammedin 
+// Es-selatu ve Es-selamu ala Resulina Muhammedin
 // Allah u Ekber, Allah u Ekber, Allah u Ekber, La ilahe illallah
 // SubhanAllah, Elhamdulillah, Allahu Ekber
 // Allah u Ekber, Allah u Ekber, Allah u Ekber, La ilahe illallah
@@ -21,7 +21,7 @@ export default async function Layout({
 }) {
   const session = await validateRequest();
 
-  if (!session.user) redirect("/malper");
+  if (!session.user) redirect("/login");
 
   return (
     <SessionProvider value={session}>

@@ -1,8 +1,8 @@
-/* Bismillahirrahmanirrahim 
+/* Bismillahirrahmanirrahim
    Elhamdulillahi Rabbil Alemin
    Ve salatu ve selamu ala Resulina Muhammedin ve ala alihi ve sahbihi ecmain
    Amin
-   Allah u Ekber Allah u Ekber la ilahe illallah 
+   Allah u Ekber Allah u Ekber la ilahe illallah
    Subhanallah */
 
 
@@ -176,7 +176,7 @@
     box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.15);
   }
 
-  .auth-form button {
+  .auth-form button[type="submit"] {
     width: 100%;
     min-height: 2.75rem;
     border-radius: 0.75rem;
@@ -188,7 +188,7 @@
     transition: background-color 0.2s ease;
   }
 
-  .auth-form button:hover {
+  .auth-form button[type="submit"]:hover {
     background: hsl(var(--primary) / 0.9);
   }
 
