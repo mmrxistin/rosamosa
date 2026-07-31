@@ -6,7 +6,7 @@
 // Allahu Ekber, Allahu Ekber, Allahu Ekber, La ilahe illAllah
 // Bila Allah Azze ve Celle me ji sunneta Resulullah Muhammed (s.a.v) neqetine, amin rabbal alemin 
 // Xeyni Allah tu Xweda tune,Allah yeke û tu şirîkê Allah tune, pesin de jî mulk de jî û spasî tenê Allah re tê kirin.
-
+// Hz Mıhemed ji qûl u resûlê wi ye 
 
 
 import { validateRequest } from "@/auth";
