@@ -103,46 +103,8 @@ export interface RojnamePage {
 }
 
 
-// Dirok (history) example
-export function getYekemInclude(loggedInUserId: string) {
-  return {
-    user: {
-      select: getUserDataSelect(loggedInUserId),
-    },
-    attachments: true,
-  } as const;
-}
-
-export type YekemData = Prisma.YekemGetPayload<{
-  include: ReturnType<typeof getYekemInclude>;
-}>;
-
-export interface YekemPage {
-  items: YekemData[];
-  nextCursor: string | null;
-}
 
 
-
-
-// Dirok (history) example
-export function getDuyemInclude(loggedInUserId: string) {
-  return {
-    user: {
-      select: getUserDataSelect(loggedInUserId),
-    },
-    attachments: true,
-  } as const;
-}
-
-export type DuyemData = Prisma.DuyemGetPayload<{
-  include: ReturnType<typeof getDuyemInclude>;
-}>;
-
-export interface DuyemPage {
-  items: DuyemData[];
-  nextCursor: string | null;
-}
 export interface BookmarkInfo {
   isBookmarkedByUser: boolean;
 }
