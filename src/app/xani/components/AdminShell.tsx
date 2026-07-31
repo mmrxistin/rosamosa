@@ -2,7 +2,7 @@
 // Elhamdulillahirabbulalemin
 // Esselatu vesselamu ala rasulina Muhammedin 
 // Suphanallah, Elhamdulillah, Allahu Ekber
-// Allah U Ekber, Allah U Ekber, Allah U Ekber, La ilahe illallah
+// Allah U Ekber, Allah U Ekber, Allah U Ekber, La ilahe illAllah
 
 
 
