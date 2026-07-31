@@ -69,7 +69,7 @@ export async function signUp(
           username,
           displayName: username,
           email,
-          passwordHash,
+          password: passwordHash,
         },
       });
     });

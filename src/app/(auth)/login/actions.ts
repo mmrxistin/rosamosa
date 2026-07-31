@@ -29,7 +29,7 @@ export async function login(
       };
     }
 
-    const validPassword = await verify(existingUser.passwordHash, password, {
+    const validPassword = await verify(existingUser.password, password, {
       memoryCost: 19456,
       timeCost: 2,
       outputLen: 32,

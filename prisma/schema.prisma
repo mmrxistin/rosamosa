@@ -20,18 +20,14 @@ datasource db {
 }
 
 model User {
-  id           String   @id @default(cuid())
-  email        String   @unique
-  username     String   @unique
-  displayName  String
-  avatarUrl    String?
-  googleId     String?  @unique
-  bio          String?
-  passwordHash String
-  createdAt    DateTime @default(now())
-  updatedAt    DateTime @updatedAt
+  id        Int      @id @default(autoincrement())
+  email     String   @unique
+  username  String   @unique
+  password  String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 
-  posts        Post[]
+  posts     Post[]
 }
 
 model Post {
@@ -41,6 +37,6 @@ model Post {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
-  authorId  String
+  authorId  Int
   author    User     @relation(fields: [authorId], references: [id])
 }
