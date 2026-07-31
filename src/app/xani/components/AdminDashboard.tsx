@@ -54,12 +54,10 @@ export default function AdminDashboard() {
           <div>
             <p className="text-sm uppercase tracking-[0.28em] text-slate-500">Admin Kontrol Paneli</p>
             <h1 className="mt-2 text-3xl font-semibold text-slate-900">Yönetim Merkezi</h1>
-            <p className="mt-2 max-w-2xl text-sm leading-6 text-slate-600">
-              `src/app/(main)` klasörü artık tek bir yönetim kabuğu ile tanımlı. Navbar, sidebar ve içerik bölümleri ayrı bileşenlerde organize edildi.
-            </p>
+          
           </div>
           <Button asChild variant="secondary" size="lg">
-            <Link href="/users">Hızlı Kullanıcı Yönetimi</Link>
+            <Link href="/xani/users">Hızlı Kullanıcı Yönetimi</Link>
           </Button>
         </div>
       </div>
