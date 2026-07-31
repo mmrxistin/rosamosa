@@ -3,13 +3,12 @@
 // Es-selatu vesselamu ala rasulina Muhammedin 
 // La havle ve la kuvvete illa billahil aliyyil azim
 // Allah u Ekber
-// La ilahe illallah Muhammedur Resulullah
+// La ilahe illAllah Muhammedur Resulullah
 // Subhanallah, Elhamdulillah, Allahu Ekber, La ilahe illallah
 // Estağfirulllah El-Azim
 
 import React from "react";
 import { headers } from "next/headers";
-import AdminShell from "@/app/xani/components/AdminShell";
 
 async function getMessages() {
   const headersList = headers();
@@ -24,7 +23,7 @@ async function getMessages() {
 export default async function MessagesPage() {
   const messages = await getMessages();
   return (
-    <AdminShell>
+  
       <div style={{ background: "white", maxWidth: 700, margin: "40px auto", padding: 24 }}>
         <h1 style={{ fontWeight: 700, fontSize: "2rem", marginBottom: 24, color: "#28a745" }}>
           Gelen Mesajlar
@@ -53,6 +52,6 @@ export default async function MessagesPage() {
           ))}
         </ul>
       </div>
-    </AdminShell>
+   
   );
 }
