@@ -29,7 +29,7 @@ const dashboardCards = [
   {
     title: "İletişim",
     description: "İletişim ve banka bilgilerini düzenle ve güncelleyin.",
-    href: "/xani",
+    href: "/xani/dirok",
     icon: FileText,
   },
   {

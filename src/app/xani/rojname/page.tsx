@@ -5,7 +5,7 @@
 // Allahumme salli ala seyyidina Muhammedin 
 // Allah u Ekber, Allahu Ekber, Allahu Ekber
 // La ilahe illAllah, Allahu Ekber, Allahu Ekber, ve lillahi'l-hamd
-// Subhanallah, Elhamdulillah, Allahu Ekber
+// SubhanAllah, Elhamdulillah, Allahu Ekber
 
 
 import PostEditor from "@/components/rojname/editor/PostEditor";

@@ -2,8 +2,8 @@
 // Elhamdu lillahi rabbil alamin
 // Esselatu vesselamu ala rasulillah 
 // La ilahe illallahu vahdehu la sharike leh, lehul mulku ve lehul hamdu
-// Subhanallahi ve bihamdi, subhanallahil azim.
-// Subhanallah, Elhamdulillah, Allahu Ekber
+// SubhanAllahi ve bihamdi, subhanAllahil Azim.
+// SubhanAllah, Elhamdulillah, Allahu Ekber
 
 
 import PostEditor from "@/components/dirok/editor/PostEditor";
