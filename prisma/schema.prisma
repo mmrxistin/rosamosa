@@ -6,8 +6,6 @@
 // La ilahe illallah, Allahu Ekber, Allahu Ekber ve lillahi'l-hamd
 // Subhanallah, Elhamdulillah, Allahu Ekber
 
-
-
 // schema.prisma
 
 generator client {
@@ -20,23 +18,27 @@ datasource db {
 }
 
 model User {
-  id           String   @id @default(cuid())
-  email        String   @unique
-  username     String   @unique
-  displayName  String
-  avatarUrl    String?
-  googleId     String?
-  bio          String?
-  password     String
-  createdAt    DateTime @default(now())
-  updatedAt    DateTime @updatedAt
+  id          String   @id @default(cuid())
+  email       String   @unique
+  username    String   @unique
+  displayName String
+  avatarUrl   String?
+  googleId    String?
+  bio         String?
+  password    String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
 
-  sessions     Session[]
-  posts        Post[]
+  sessions Session[]
+  posts    Post[]
+  agahis   Agahi[]
+  diroks   Dirok[]
+  rojnames Rojname[]
+  xanes    Xane[]
 }
 
 model Session {
-  id        String   @id
+  id        String    @id
   userId    String
   expiresAt DateTime?
   idleSince DateTime?
@@ -45,42 +47,42 @@ model Session {
 }
 
 model Agahi {
-  id         String   @id @default(cuid())
-  content    String[]
-  createdAt  DateTime @default(now())
-  updatedAt  DateTime @updatedAt
-  userId     String
-  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  id          String   @id @default(cuid())
+  content     String[]
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  userId      String
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
   attachments Media[]
 }
 
 model Dirok {
-  id         String   @id @default(cuid())
-  content    String[]
-  createdAt  DateTime @default(now())
-  updatedAt  DateTime @updatedAt
-  userId     String
-  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  id          String   @id @default(cuid())
+  content     String[]
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  userId      String
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
   attachments Media[]
 }
 
 model Rojname {
-  id         String   @id @default(cuid())
-  content    String[]
-  createdAt  DateTime @default(now())
-  updatedAt  DateTime @updatedAt
-  userId     String
-  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  id          String   @id @default(cuid())
+  content     String[]
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  userId      String
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
   attachments Media[]
 }
 
 model Xane {
-  id         String   @id @default(cuid())
-  content    String[]
-  createdAt  DateTime @default(now())
-  updatedAt  DateTime @updatedAt
-  userId     String
-  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  id          String   @id @default(cuid())
+  content     String[]
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  userId      String
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
   attachments Media[]
 }
 
@@ -92,13 +94,13 @@ model Media {
   updatedAt DateTime  @updatedAt
 
   agahiId   String?
-  agahi     Agahi?    @relation(fields: [agahiId], references: [id])
+  agahi     Agahi?   @relation(fields: [agahiId], references: [id])
   dirokId   String?
-  dirok     Dirok?    @relation(fields: [dirokId], references: [id])
+  dirok     Dirok?   @relation(fields: [dirokId], references: [id])
   rojnameId String?
-  rojname   Rojname?  @relation(fields: [rojnameId], references: [id])
+  rojname   Rojname? @relation(fields: [rojnameId], references: [id])
   xaneId    String?
-  xane      Xane?     @relation(fields: [xaneId], references: [id])
+  xane      Xane?    @relation(fields: [xaneId], references: [id])
 }
 
 enum MediaType {
@@ -122,6 +124,6 @@ model Post {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
-  authorId  String
-  author    User     @relation(fields: [authorId], references: [id])
+  authorId String
+  author   User   @relation(fields: [authorId], references: [id])
 }
