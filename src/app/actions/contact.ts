@@ -3,6 +3,7 @@
 import { contactSchema } from '@/lib/security/contact-schema';
 import { checkRateLimit } from '@/lib/security/rate-limiter';
 import { headers } from 'next/headers';
+import prisma from '@/lib/prisma';
 
 export interface ActionResponse {
   success: boolean;
@@ -44,6 +45,21 @@ export async function submitContactFormAction(
 
     // Process validated & sanitized data securely
     const sanitizedData = validationResult.data;
+    try {
+      await prisma.mmmpeyam.create({
+        data: {
+          name: sanitizedData.name || 'Anonim',
+          email: sanitizedData.contact,
+          message: sanitizedData.message,
+        },
+      });
+    } catch (dbErr) {
+      console.error('DB save failed', dbErr);
+      return {
+        success: false,
+        error: 'Mesaj kaydedilemedi, lütfen tekrar deneyin.',
+      };
+    }
     console.log('[SECURITY-LOG] Secure Contact Form Submitted:', {
       ip: clientIp,
       contact: sanitizedData.contact,
