@@ -17,31 +17,25 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <main  className="flex h-screen items-center justify-center p-5">
-      <div className="flex h-full max-h-[40rem] w-full max-w-[64rem] overflow-hidden rounded-2xl bg-card shadow-2xl">
-        <div className="w-full space-y-10 overflow-y-auto p-10 md:w-1/2">
-          <h1 className="text-center text-3xl font-bold">Admin Giriş<img src="" alt="" /></h1>
+    <main className="auth-page flex h-screen items-center justify-center p-5">
+      <div className="auth-card flex h-full max-h-[40rem] w-full max-w-[64rem] overflow-hidden rounded-2xl bg-card shadow-2xl">
+        <div className="auth-content w-full space-y-10 overflow-y-auto p-10 md:w-1/2">
+          <h1 className="auth-title text-center text-3xl font-bold">Admin Giriş</h1>
           <div className="space-y-5">
-            
-            <div className="flex items-center gap-3">
-              <div className="h-px flex-1 bg-muted" />
-              <span>.....</span>
-              <div className="h-px flex-1 bg-muted" />
+            <div className="auth-divider">
+              <span>Giriş yaparak devam et</span>
             </div>
             <LoginForm />
-  
-<Button>
-            <Link href="/malper" className="block text-center hover:underline">
-              Anasayfaya Dön
-        
-            </Link>
-
+            <Button asChild className="w-full">
+              <Link href="/malper" className="block text-center w-full">
+                Anasayfaya Dön
+              </Link>
             </Button>
           </div>
         </div>
         <Image
           src={loginImage}
-          alt=""
+          alt="Login illustration"
           className="hidden w-1/2 object-cover md:block"
         />
       </div>

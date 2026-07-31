@@ -91,7 +91,7 @@ export default function SignUpForm() {
           )}
         />
         <LoadingButton loading={isPending} type="submit" className="w-full">
-         
+          Kayıt Ol
         </LoadingButton>
       </form>
     </Form>
