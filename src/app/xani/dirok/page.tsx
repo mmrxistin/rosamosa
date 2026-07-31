@@ -6,7 +6,7 @@
 // Allah bizleri Kur'an ve Sünnet'e bağlı, salih ameller işleyen kullarından eylesin.
 // Allah bizleri Peygamber Efendimiz'in (s.a.v) izinden giden, O'na layık bir ümmet eylesin.
 // SuphanAllah velhamdulillah, Allahu Ekber.
-// La ilahe illallah, Muhammedur Resulullah.
+// La ilahe illAllah, Muhammedur Resulullah.
 import PostEditor from "@/components/dirok/editor/PostEditor";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
@@ -23,8 +23,8 @@ export default function Home() {
       <Alert variant="success">dirok</Alert>
         <Tabs defaultValue="mm">
           <TabsList>
-            <TabsTrigger value="for-you">For You</TabsTrigger>
-            <TabsTrigger value="mm">New Post</TabsTrigger>
+            <TabsTrigger value="for-you">Paylaşılanlar</TabsTrigger>
+            <TabsTrigger value="mm">Yeni</TabsTrigger>
 
           </TabsList>
           <TabsContent value="for-you">

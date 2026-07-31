@@ -4,7 +4,7 @@
 // Esselatu vesselamu ala rasulillah 
 // Allahumme salli ala seyyidina Muhammedin 
 // Allah u Ekber, Allahu Ekber, Allahu Ekber
-// La ilahe illAllah, Allahu Ekber, Allahu Ekber, ve lillahi'l-hamd
+// La ilahe illAllah, Allahu Ekber, Allahu Ekber ve lillahi'l-hamd
 // SubhanAllah, Elhamdulillah, Allahu Ekber
 
 
@@ -21,11 +21,11 @@ export default function Home() {
     <main className="flex w-full min-w-0 gap-5 p-">
       <div className="w-full min-w-0 space-y-5">
 
-      <Alert variant="success"> Rojname ya rêvebibe </Alert>
+      <Alert variant="success"> Haber Yükle</Alert>
         <Tabs defaultValue="mm">
           <TabsList>
-            <TabsTrigger value="for-you">Parvekirin</TabsTrigger>
-            <TabsTrigger value="mm">Nû </TabsTrigger>
+            <TabsTrigger value="for-you">Paylaşılanlar</TabsTrigger>
+            <TabsTrigger value="mm">Yeni </TabsTrigger>
 
           </TabsList>
           <TabsContent value="for-you">

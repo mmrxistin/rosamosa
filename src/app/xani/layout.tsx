@@ -6,10 +6,9 @@
 // Allah u Ekber, Allah u Ekber, Allah u Ekber, La ilahe illallah
 // Subhanallah , Elhamdulillah, Allahu Ekber
 // Hasbunallahu ve ni'mel vekil
-// La havle ve la kuvvete illa billahil aliyyil azim ve huwe ala kulli şeyin kadir
+// La havle ve la kuvvete illa billahil Aliyyil Azim ve huwe ala kulli şeyin kadir
 // Elhamdulillah Elhamdulillah Elhamdulillah
 // Elhamdulillah Elhamdulillah Elhamdulillah
-// xani area layout — session-protected admin area
 import { validateRequest } from "@/auth";
 import { redirect } from "next/navigation";
 import SessionProvider from "./SessionProvider";
