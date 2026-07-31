@@ -3,7 +3,7 @@
 // Elhamdullillahirabbulalemin
 //Es-selatu vesselamu ala rasulina Muhammedin 
 //SuphanAllah wa bihamdihi, suphanAllahil-azim
-//la ilaha illallahu wahdahu la sharika lahu, lahul-mulku wa lahul-hamdu yuhyi wa yumitu wa huwa ala kulli shayin qadir
+//la ilaha illallahu wahdahu la sharika lahu, lahul-mulku wa lahul-hamdu yuhyi wa yumitu wa  huwa ala kulli shayin qadir
 
 
 import { validateRequest } from "@/auth";

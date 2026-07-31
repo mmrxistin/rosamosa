@@ -51,7 +51,7 @@ export async function GET(req: NextRequest) {
           },
         ],
       },
-      include: getXaneInclude(user.id),
+      include: getRojnameInclude(user.id),
       orderBy: { createdAt: "desc" },
       take: pageSize + 1,
       cursor: cursor ? { id: cursor } : undefined,
