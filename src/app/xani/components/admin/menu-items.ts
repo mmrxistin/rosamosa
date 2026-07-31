@@ -2,8 +2,8 @@
 // Elhamdulillahirabbulalemin
 // Esselatu vesselamu ala rasulina Muhammedin 
 // Suphanallah, Elhamdulillah, Allahu Ekber
-// Allah U Ekber, Allah U Ekber, Allah U Ekber, La ilahe illallah
-// Allah u Ekber Ve Lillahil Hamd, Allah u Ekber, Allah u Ekber, La ilahe illallah
+// Allah U Ekber, Allah U Ekber, Allah U Ekber, La ilahe illAllah
+// Allah u Ekber Ve Lillahil Hamd, Allah u Ekber, Allah u Ekber, La ilahe illAllah
 
 import { Bookmark, Home, Mail, Settings2, Users } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
@@ -16,10 +16,9 @@ export interface AdminMenuItem {
 }
 
 export const adminMenuItems: AdminMenuItem[] = [
-  { label: "Ana Sayfa", href: "/mmdashboard", icon: Home },
-  { label: "Kullanıcılar", href: "/users", icon: Users },
+  { label: "Ana Sayfa", href: "/xani", icon: Home },
+  { label: "Kullanıcılar", href: "/xani/users", icon: Users },
   { label: "Haber Yükle", href: "/xani/admin/news", icon: Bookmark },
-  { label: "Ecibandî", href: "/bookmarks", icon: Bookmark },
-  { label: "Peyam", href: "/peyam", icon: Mail, badgeKey: "messages" },
-  { label: "Ayarlar", href: "/settings/profile", icon: Settings2 },
+  { label: "Peyam", href: "/xani/peyam", icon: Mail, badgeKey: "messages" },
+  { label: "Ayarlar", href: "/xani/miheng", icon: Settings2 },
 ];
