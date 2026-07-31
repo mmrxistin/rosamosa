@@ -70,7 +70,7 @@ export async function signUp(
       });
     });
 
-    const session = await lucia.createSession(createdUser.id, {});
+    const session = await lucia.createSession(String(createdUser.id), {});
     const sessionCookie = lucia.createSessionCookie(session.id);
     cookies().set(
       sessionCookie.name,
