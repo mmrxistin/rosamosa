@@ -1,7 +1,7 @@
-// Bismillahirrahmanirrahim 
+// Bismillahirrahmanirrahim
 // Elhamdulillahirabbulalemin
 //        اَشْهَدُ اَنْ لاَ اِلٰهَ اِلاَّ اللّٰهُ وَاَشْهَدُ اَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ
-// Esselatu vesselamu ala rasulillah 
+// Esselatu vesselamu ala rasulillah
 // Allah u Ekber, Allahu Ekber, Allahu Ekber
 // La ilahe illallah, Allahu Ekber, Allahu Ekber ve lillahi'l-hamd
 // Subhanallah, Elhamdulillah, Allahu Ekber
@@ -35,7 +35,8 @@ model User {
   diroks   Dirok[]
   rojnames Rojname[]
   xanes    Xane[]
-  malperNews MalperNews[]
+  malperNews    MalperNews[]
+  malperReports MalperReport[]
 }
 
 model Session {
@@ -132,7 +133,22 @@ model Post {
 model MalperNews {
   id        Int      @id @default(autoincrement())
   title     String
-  date      DateTime
+  desc      String?
+  date      DateTime @default(now())
+  imgUrl    String?
+  link      String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  authorId  String?
+  author    User?    @relation(fields: [authorId], references: [id], onDelete: SetNull)
+}
+
+model MalperReport {
+  id        Int      @id @default(autoincrement())
+  title     String
+  desc      String?
+  date      DateTime @default(now())
   imgUrl    String?
   link      String?
   createdAt DateTime @default(now())
