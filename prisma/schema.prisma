@@ -1,0 +1,15 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql" // değiştirin: postgresql, mysql, sqlite vb.
+  url      = env("DATABASE_URL")
+}
+
+// Prisma şeması model tanımları bu dosyaya eklenmelidir.
+// Örnek:
+// model User {
+//   id    String @id @default(cuid())
+//   email String @unique
+// }
