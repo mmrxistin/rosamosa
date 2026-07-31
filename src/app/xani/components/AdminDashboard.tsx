@@ -16,26 +16,26 @@ const dashboardCards = [
   {
     title: "Haberler",
     description: "Admin panel genel bakışı, hızlı erişim ve yönetim araçları.",
-    href: "/rojname",
+    href: "/xani/rojname",
     icon: Home,
   },
 
   {
     title: "Mesajlar",
     description: "Gelen mesajları, bildirimleri ve geri bildirimleri denetleyin.",
-    href: "/peyam",
+    href: "/xani/peyam",
     icon: MessageCircle,
   },
   {
     title: "İletişim",
     description: "İletişim ve banka bilgilerini düzenle ve güncelleyin.",
-    href: "/",
+    href: "/xani",
     icon: FileText,
   },
   {
     title: "Raporlar",
     description: "Sistem performansı, kullanım ve site raporlarına ulaşın.",
-    href: "/reports",
+    href: "/xani/reports",
     icon: ShieldCheck,
   },
   {

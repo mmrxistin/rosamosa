@@ -19,7 +19,7 @@ const PasswordInput = React.forwardRef<HTMLInputElement, InputProps>(
       <div className="relative">
         <Input
           type={showPassword ? "text" : "password"}
-          className={cn("pr-14", className)}
+          className={cn("pr-12", className)}
           ref={ref}
           {...props}
         />
@@ -27,7 +27,7 @@ const PasswordInput = React.forwardRef<HTMLInputElement, InputProps>(
           type="button"
           onClick={() => setShowPassword(!showPassword)}
           title={showPassword ? "Hide password" : "Show password"}
-          className="absolute inset-y-0 right-3 flex items-center justify-center rounded-md text-muted-foreground"
+          className="absolute right-3 top-1/2 -translate-y-1/2 z-10 flex h-8 w-8 items-center justify-center rounded-md text-muted-foreground"
         >
           {showPassword ? (
             <EyeOff className="h-5 w-5" />
