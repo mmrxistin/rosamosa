@@ -45,59 +45,6 @@ export interface AgahiPage {
 
 
 
-// Hedis example (same pattern)
-export function getHedisInclude(loggedInUserId: string) {
-  return {
-    user: {
-      select: getUserDataSelect(loggedInUserId),
-    },
-    attachments: true,
-  } as const;
-}
-
-export type HedisData = Prisma.HedisGetPayload<{
-  include: ReturnType<typeof getHedisInclude>;
-}>;
-
-export interface HedisPage {
-  items: HedisData[];
-  nextCursor: string | null;
-}
-export function getFiqihInclude(loggedInUserId: string) {
-  return {
-    user: {
-      select: getUserDataSelect(loggedInUserId),
-    },
-    attachments: true,
-  } as const;
-}
-
-export type FiqihData = Prisma.FiqihGetPayload<{
-  include: ReturnType<typeof getFiqihInclude>;
-}>;
-
-export interface FiqihPage {
-  items: FiqihData[];
-  nextCursor: string | null;
-}
-
-export function getDuaInclude(loggedInUserId: string) {
-  return {
-    user: {
-      select: getUserDataSelect(loggedInUserId),
-    },
-    attachments: true,
-  } as const;
-}
-
-export type DuaData = Prisma.DuaGetPayload<{
-  include: ReturnType<typeof getDuaInclude>;
-}>;
-
-export interface DuaPage {
-  items: DuaData[];
-  nextCursor: string | null;
-}
 export function getXaneInclude(loggedInUserId: string) {
   return {
     user: {
