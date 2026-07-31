@@ -38,63 +38,6 @@ export interface AgahiPage {
   items: AgahiData[];
   nextCursor: string | null;
 }
-export function getMealInclude(loggedInUserId: string) {
-  return {
-    user: {
-      select: getUserDataSelect(loggedInUserId),
-    },
-    attachments: true,
-  } as const;
-}
-
-export type MealData = Prisma.MealGetPayload<{
-  include: ReturnType<typeof getMealInclude>;
-}>;
-
-export interface MealPage {
-  items: MealData[];
-  nextCursor: string | null;
-}
-
-
-export function getTefsirInclude(loggedInUserId: string) {
-  return {
-    user: {
-      select: getUserDataSelect(loggedInUserId),
-    },
-    attachments: true,
-  } as const;
-}
-
-export type TefsirData = Prisma.TefsirGetPayload<{
-  include: ReturnType<typeof getTefsirInclude>;
-}>;
-
-export interface TefsirPage {
-  items: TefsirData[];
-  nextCursor: string | null;
-}
-// Generic include for content models (Agahi, Duyem, Dirok, etc.)
-export function getKelamDataInclude(loggedInUserId: string) {
-  return {
-    user: {
-      select: getUserDataSelect(loggedInUserId),
-    },
-    attachments: true,
-  } as const;
-}
-
-// Generic content type used for lists/pages returned by your APIs.
-// Each content model (Agahi, Duyem, Dirok, ...) will conform to this shape at runtime.
-
-export type KelamData = Prisma.KelamGetPayload<{
-  include: ReturnType<typeof getKelamDataInclude>;
-}>;
-
-export interface KelamPage {
-  posts: KelamData[];
-  nextCursor: string | null;
-}
 
 // ------------------------
 // Per-model include + type examples
