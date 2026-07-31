@@ -35,6 +35,7 @@ model User {
   diroks   Dirok[]
   rojnames Rojname[]
   xanes    Xane[]
+  malperNews MalperNews[]
 }
 
 model Session {
@@ -126,4 +127,17 @@ model Post {
 
   authorId String
   author   User   @relation(fields: [authorId], references: [id])
+}
+
+model MalperNews {
+  id        Int      @id @default(autoincrement())
+  title     String
+  date      DateTime
+  imgUrl    String?
+  link      String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  authorId  String?
+  author    User?    @relation(fields: [authorId], references: [id], onDelete: SetNull)
 }

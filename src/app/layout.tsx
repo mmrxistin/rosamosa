@@ -13,8 +13,8 @@ import type { Metadata } from "next";
 import { ThemeProvider } from "next-themes";
 import { extractRouterConfig } from "uploadthing/server";
 import { fileRouter } from "./api/uploadthing/core";
-import "./globals.css";
 import "bootstrap/dist/css/bootstrap.css";
+import "./globals.css";
 import ReactQueryProvider from "./ReactQueryProvider";
 
 export const metadata: Metadata = {

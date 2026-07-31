@@ -18,6 +18,7 @@ export interface AdminMenuItem {
 export const adminMenuItems: AdminMenuItem[] = [
   { label: "Ana Sayfa", href: "/mmdashboard", icon: Home },
   { label: "Kullanıcılar", href: "/users", icon: Users },
+  { label: "Haber Yükle", href: "/xani/admin/news", icon: Bookmark },
   { label: "Ecibandî", href: "/bookmarks", icon: Bookmark },
   { label: "Peyam", href: "/peyam", icon: Mail, badgeKey: "messages" },
   { label: "Ayarlar", href: "/settings/profile", icon: Settings2 },

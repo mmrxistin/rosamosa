@@ -26,18 +26,10 @@ export default function Page() {
               <span>Giriş yaparak devam et</span>
             </div>
             <LoginForm />
-            <Button asChild className="w-full">
-              <Link href="/malper" className="block text-center w-full">
-                Anasayfaya Dön
-              </Link>
-            </Button>
+          
           </div>
         </div>
-        <Image
-          src={loginImage}
-          alt="Login illustration"
-          className="hidden w-1/2 object-cover md:block"
-        />
+    
       </div>
     </main>
   );

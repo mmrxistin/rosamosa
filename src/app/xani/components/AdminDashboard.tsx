@@ -27,8 +27,8 @@ const dashboardCards = [
     icon: MessageCircle,
   },
   {
-    title: "Hakkımızda",
-    description: "Qur'an, Hedis, Fiqih, Kelam ve diğer içerik bölümlerine hızlı erişim.",
+    title: "İletişim",
+    description: "İletişim ve banka bilgilerini düzenle ve güncelleyin.",
     href: "/",
     icon: FileText,
   },
