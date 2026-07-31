@@ -62,7 +62,7 @@ export async function signUp(
       };
     }
 
-    await prisma.$transaction(async (tx: { user: { create: (arg0: { data: { id: string; username: string; displayName: string; email: string; passwordHash: string; }; }) => any; }; }) => {
+    await prisma.$transaction(async (tx) => {
       await tx.user.create({
         data: {
           id: userId,
@@ -72,7 +72,6 @@ export async function signUp(
           passwordHash,
         },
       });
-     
     });
 
     const session = await lucia.createSession(userId, {});

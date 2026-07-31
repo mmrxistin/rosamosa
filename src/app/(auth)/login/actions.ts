@@ -23,7 +23,7 @@ export async function login(
       },
     });
 
-    if (!existingUser || !existingUser.passwordHash) {
+    if (!existingUser) {
       return {
         error: "Incorrect username or password",
       };
