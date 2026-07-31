@@ -13,6 +13,7 @@
 import { validateRequest } from "@/auth";
 import { redirect } from "next/navigation";
 import SessionProvider from "./SessionProvider";
+import AdminShell from "./components/AdminShell";
 
 export default async function Layout({
   children,
@@ -25,9 +26,7 @@ export default async function Layout({
 
   return (
     <SessionProvider value={session}>
-      <div className="min-h-screen flex flex-col bg-slate-50">
-        <main className="flex-1">{children}</main>
-      </div>
+      <AdminShell>{children}</AdminShell>
     </SessionProvider>
   );
 }
