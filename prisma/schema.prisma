@@ -1,15 +1,42 @@
+// Bismillahirrahmanirrahim 
+// Elhamdulillahirabbulalemin
+//        اَشْهَدُ اَنْ لاَ اِلٰهَ اِلاَّ اللّٰهُ وَاَشْهَدُ اَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ
+// Esselatu vesselamu ala rasulillah 
+// Allah u Ekber, Allahu Ekber, Allahu Ekber
+// La ilahe illallah, Allahu Ekber, Allahu Ekber ve lillahi'l-hamd
+// Subhanallah, Elhamdulillah, Allahu Ekber
+
+
+
+// schema.prisma
+
 generator client {
   provider = "prisma-client-js"
 }
 
 datasource db {
-  provider = "postgresql" // değiştirin: postgresql, mysql, sqlite vb.
-  url      = env("DATABASE_URL")
+  provider = "postgresql"
+  url      = env("DATABASE_URL") // Neon bağlantı URL'inizi buraya koyun
 }
 
-// Prisma şeması model tanımları bu dosyaya eklenmelidir.
-// Örnek:
-// model User {
-//   id    String @id @default(cuid())
-//   email String @unique
-// }
+model User {
+  id        Int      @id @default(autoincrement())
+  email     String   @unique
+  username  String   @unique
+  password  String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  posts     Post[]
+}
+
+model Post {
+  id        Int      @id @default(autoincrement())
+  title     String
+  content   String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  authorId  Int
+  author    User     @relation(fields: [authorId], references: [id])
+}
