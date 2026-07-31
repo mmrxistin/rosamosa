@@ -15,6 +15,7 @@ import { validateRequest } from "@/auth";
 import { redirect } from "next/navigation";
 import SessionProvider from "./SessionProvider";
 import Navbar from "./Navbar";
+
 export default async function Layout({
   children,
 }: {
@@ -24,7 +25,19 @@ export default async function Layout({
 
   if (!session.user) redirect("/malper");
 
-  return <SessionProvider value={session}>{children}</SessionProvider>;
+  return (
+    <SessionProvider value={session}>
+      <div className="min-h-screen flex flex-col bg-slate-50">
+        <Navbar />
+        <main className="flex-1">{children}</main>
+        <footer className="flex items-center justify-center w-full h-16 bg-gray-800 text-white">
+          <p className="text-sm">© {new Date().getFullYear()} Yekazad Software Center.</p>
+          <span className="mx-2">|</span>
+          <p className="text-xs text-gray-400">Admin Panel</p>
+        </footer>
+      </div>
+    </SessionProvider>
+  );
 }
 
 
