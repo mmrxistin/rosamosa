@@ -8,6 +8,7 @@
 //  yuhyi ve yumit ve biyadihil xayr 
 //  ve huve ala kulli şey'in kadir
 // Allah u Ekber Ve Lillahil Hamd
+
 "use client";
 import React, { useState } from 'react';
 import SpotlightBackground from '@/components/SpotlightBackground';
