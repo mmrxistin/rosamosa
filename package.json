@@ -2,12 +2,22 @@
   "name": "yekazadsoftwarecenter",
   "version": "0.1.0",
   "private": true,
+  "workspaces": [
+    "ehmedexani"
+  ],
   "author": {
     "name": "cigerxwinislam",
     "email": "islamtunc748@gmail.com"
   },
   "scripts": {
     "dev": "next dev",
+    "dev:strapi": "npm --workspace ehmedexani run develop",
+    "build:strapi": "npm --workspace ehmedexani run build",
+    "start:strapi": "npm --workspace ehmedexani run start",
+    "seed:strapi": "npm --workspace ehmedexani run seed:example",
+    "console:strapi": "npm --workspace ehmedexani run console",
+    "upgrade:strapi": "npm --workspace ehmedexani run upgrade",
+    "upgrade:dry:strapi": "npm --workspace ehmedexani run upgrade:dry",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
