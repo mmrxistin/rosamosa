@@ -1,0 +1,34 @@
+// Bismillahir Rahmanir Rahim
+// Elhamdu Lillahi Rabbil Alamin
+// Es selatu vesselamu ala rasulina Muhammedin
+// Suphan Allah ul Azim ve Bihamdihi
+// Subhan Allahil Azim
+// La ilahe illAllah u vahdehu la şerike leh, lehul mülkü ve lehul hamdü
+//yuhyi ve yumit ,biyadihil xayru ve huve ala kulli şeyin kadir.
+//  ve hüve ala külli şeyin kadir.
+// Elhamdulillah ya Samed i Vehhab i Quddus i  Erhamer Rahimin i Gafur i Rahim i Halim i Azim i Aziz i Hakim i Latif i Hafiz i Kadir i Muheymin i Ehed  i Alim i Basir i Sami i Halim i Gani
+// La ilahe illAllah u vahdehu la şerike leh, lehul mülkü ve lehul hamdü
+// Rabbena Ve Lekel Hamd . İnneke Hamidun Mecid
+// Allahu Ekber Allahu Ekber Allahu Ekber La ilahe illAllah
+// Allahu Ekber Allahu Ekber ve Lillahil Hamd
+"use client";
+// import type { Core } from '@strapi/strapi';
+
+export default {
+  /**
+   * An asynchronous register function that runs before
+   * your application is initialized.
+   *
+   * This gives you an opportunity to extend code.
+   */
+  register(/* { strapi }: { strapi: Core.Strapi } */) {},
+
+  /**
+   * An asynchronous bootstrap function that runs before
+   * your application gets started.
+   *
+   * This gives you an opportunity to set up your data model,
+   * run jobs, or perform some special logic.
+   */
+  bootstrap(/* { strapi }: { strapi: Core.Strapi } */) {},
+};
