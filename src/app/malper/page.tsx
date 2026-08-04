@@ -29,6 +29,7 @@ import Footer from '@/components/Footer';
 import { ActiveModalState, MediaItem, GalleryItem } from '@/types/cms';
 import { useLanguage } from '@/context/LanguageContext';
 import { CMS_DATABASE } from '@/constants/cms-database';
+import ForYouFeed from './ekibimiz/ForYouFeed';
 export default function Home(): React.JSX.Element {
   const { lang, setLang } = useLanguage();
   const [activeModal, setActiveModal] = useState<ActiveModalState | null>(null);
@@ -46,7 +47,7 @@ export default function Home(): React.JSX.Element {
         onLangChange={setLang}
         onOpenDonateModal={() => setIsDonateModalOpen(true)}
       />
-
+<ForYouFeed/>
       <HeroSection hero={pageData.hero} ui={pageData.ui} />
       <NewsPanelSection
         newsItems={pageData.newsItems}
@@ -54,7 +55,6 @@ export default function Home(): React.JSX.Element {
         questionItems={pageData.questionItems}
         ui={pageData.ui}
       />
-
       <WorkAreasSection
         sections={pageData.sections}
         ui={pageData.ui}

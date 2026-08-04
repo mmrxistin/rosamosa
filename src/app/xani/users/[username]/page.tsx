@@ -1,9 +1,14 @@
 // Bismillahirrahmanirrahim 
 // Elhamdulillahirabbulalemin
 // Es-selatu vesselamu ala rasulina Muhammedin 
-// SuphanAllah, Elhamdulillah, Allahu Ekber
+// SuphanAllah, Elhamdulillah, ve La ilahe illAllahu Allahu Ekber
 // Allah U Ekber, Allah U Ekber, Allah U Ekber, La ilahe illAllah
-
+// La ilahe illAllahu vahdehu la sharike leh, lehul mulku ve lehul hamdu
+// yuhyi ve yumit ve biyadihil xayr
+// huve ala kulli şey'in kadir
+// SubhanAllahi ve bihamdi, subhanAllahil Azim.
+// Seyyidina Muhammeden Abduhu ve Rasuluhu
+// ALLAH U EKBER VE LILLAHIL HAMD
 import { validateRequest } from "@/auth";
 import Linkify from "@/components/Linkify";
 import UserAvatar from "@/components/UserAvatar";

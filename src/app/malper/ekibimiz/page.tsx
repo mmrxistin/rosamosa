@@ -1,3 +1,16 @@
+// Bismillahir Rahmanir Rahim
+// Elhamdu Lillahi Rabbil Alamin
+// Es selatu vesselamu ala rasulina Muhammedin
+// Suphan Allah ul Azim ve Bihamdihi 
+// Subhan Allahil Azim
+// La ilahe illAllah u vahdehu la şerike leh, lehul mülkü ve lehul hamdü 
+//yuhyi ve yumit ,biyadihil xayru ve huve ala kulli şeyin kadir.
+//  ve hüve ala külli şeyin kadir.
+// Elhamdulillah ya Samed i Vehhab i Quddus i  Erhamer Rahimin i Gafur i Rahim i Halim i Azim i Aziz i Hakim i Latif i Hafiz i Kadir i Muheymin i Ehed  i Alim i Basir i Sami i Halim i Gani
+// La ilahe illAllah u vahdehu la şerike leh, lehul mülkü ve lehul hamdü
+// Rabbena Ve Lekel Hamd . İnneke Hamidun Mecid
+// Allahu Ekber Allahu Ekber Allahu Ekber La ilahe illAllah
+// Allahu Ekber Allahu Ekber ve Lillahil Hamd
 'use client';
 
 import React, { useState } from 'react';
@@ -8,6 +21,7 @@ import ScrollToTopButton from '@/components/ScrollToTopButton';
 import Footer from '@/components/Footer';
 import { useLanguage } from '@/context/LanguageContext';
 import { CMS_DATABASE, NAV_TRANSLATIONS } from '@/constants/cms-database';
+import ForYouFeed from './ForYouFeed';
 
 export default function EkibimizPage(): React.JSX.Element {
   const { lang, setLang } = useLanguage();
@@ -31,9 +45,7 @@ export default function EkibimizPage(): React.JSX.Element {
             <h1 className="text-4xl md:text-5xl font-serif font-black text-[#18151A] dark:text-white mb-6">
               {nt.subEkibimiz}
             </h1>
-            <p className="text-lg text-[#5A5260] dark:text-[#B2AAC0] max-w-2xl mx-auto">
-              Yapım Aşamasında
-            </p>
+         <ForYouFeed  />
           </div>
         </div>
       </div>

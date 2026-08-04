@@ -4,6 +4,8 @@
 // Allah U Ekber, Allah U Ekber, Allah U Ekber, La ilahe illallah
 // Subhanallah, Elhamdulillah ve La ilahe illAllahu Allahu Ekber
 // La ilahe illAllahu vahdehu la sharike leh, lehul mulku ve lehul hamdu
+// yuhyi ve yumit ve biyadihil xayr
+// huve ala kulli şey'in kadir
 // SubhanAllahi ve bihamdi, subhanAllahil Azim.
 // Seyyidina Muhammeden Abduhu ve Rasuluhu
 // ALLAH U EKBER VE LILLAHIL HAMD
@@ -21,7 +23,7 @@ import { Button } from "react-bootstrap";
 import Link from "next/link";
 import { toast } from "@/components/ui/use-toast";
 
-
+// Elhamdulillah ya Samed i Gani i Kerim i Vehhab i Erhamer Rahimin i Quddus i Baqi i Haq i Ferd i Hamidun Mecid i Ehed i Alim i Basir i Sami i Halim i Rauf
 export default function ForYouFeed() {
   const {
     data,

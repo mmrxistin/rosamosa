@@ -21,6 +21,7 @@ import ScrollToTopButton from '@/components/ScrollToTopButton';
 import Footer from '@/components/Footer';
 import { useLanguage } from '@/context/LanguageContext';
 import { CMS_DATABASE, NAV_TRANSLATIONS } from '@/constants/cms-database';
+import ForYouFeed from '../ekibimiz/ForYouFeed';
 
 export default function HaberlerPage(): React.JSX.Element {
   const { lang, setLang } = useLanguage();
@@ -44,9 +45,7 @@ export default function HaberlerPage(): React.JSX.Element {
             <h1 className="text-4xl md:text-5xl font-serif font-black text-[#18151A] dark:text-white mb-6">
               {nt.haberler}
             </h1>
-            <p className="text-lg text-[#5A5260] dark:text-[#B2AAC0] max-w-2xl mx-auto">
-              Yapım Aşamasında
-            </p>
+            <ForYouFeed/>
           </div>
         </div>
       </div>

@@ -1,5 +1,16 @@
 // Bismillahirrahmanirahim
-
+// Elhamdulillahirabbilalemin
+// Essalatu vesselamu ala Resulina Muhammedin 
+// Allah U Ekber, Allah U Ekber, Allah U Ekber, La ilahe illallah
+// Subhanallah, Elhamdulillah ve La ilahe illAllahu Allahu Ekber
+// La ilahe illAllahu vahdehu la sharike leh, lehul mulku ve lehul hamdu
+// yuhyi ve yumit ve biyadihil xayr
+// huve ala kulli şey'in kadir
+// SubhanAllahi ve bihamdi, subhanAllahil Azim.
+// Seyyidina Muhammeden Abduhu ve Rasuluhu
+// Elhamdulillah ya Samed i Gani i Kerim i Vehhab i Erhamer Rahimin i Quddus i Baqi i Haq i Ferd i Hamidun Mecid i Ehed i Alim i Basir i Sami i Halim i Rauf
+// Allahu Ekber Allahu Ekber Allahu Ekber La ilahe illAllah
+// Allahu Ekber Allahu Ekber ve Lillahil Hamd
 "use client";
 
 import Link from "next/link";
@@ -32,15 +43,15 @@ export default function AdminNavbar() {
               <NavDropdown.Item as={Link} href="/xani/posts">
                 Blog Yazıları
               </NavDropdown.Item>
-              <NavDropdown.Item as={Link} href="/xani/admin/news">
+              <NavDropdown.Item as={Link} href="/xani/rojname">
                 Yeni Yazı
               </NavDropdown.Item>
               <NavDropdown.Item as={Link} href="/categories">
                 Kategoriler
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link as={Link} href="/xani/reports">
-              Raporlar
+            <Nav.Link as={Link} href="/xani/dirok">
+            Ekibimiz Sayfası
             </Nav.Link>
           </Nav>
 
