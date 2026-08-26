@@ -1,7 +1,7 @@
-//Bismillahirrahmanirrahim 
+//Bismillahirrahmanirrahim
 // Elhamdulillahirabbulalemin
-// Es-selatu vesselamu ala rasulina Muhammedin 
-//Suphanallah, Elhamdulillah, Allahu Ekber
+// Es-selatu vesselamu ala rasulina Muhammedin
+//SuphanAllah, Elhamdulillah, Allahu Ekber
 // Allah U Ekber, Allah U Ekber, Allah U Ekber, La ilahe illAllah
 
 
@@ -24,13 +24,26 @@ export async function GET(req: Request) {
 
     const unusedMedia = await prisma.media.findMany({
       where: {
-        YekId: null,
+        AND: [
+          { yekId: null },
+          { yekayekeId: null },
+          { tefsirId: null },
+          { carId: null },
+          { duId: null },
+          { duyemId: null },
+          { seId: null },
+          { pencId: null },
+          { agahiId: null },
+          { dirokId: null },
+          { rojnameId: null },
+          { xaneId: null },
+        ],
         ...(process.env.NODE_ENV === "production"
           ? {
-              createdAt: {
-                lte: new Date(Date.now() - 1000 * 60 * 60 * 24),
-              },
-            }
+            createdAt: {
+              lte: new Date(Date.now() - 1000 * 60 * 60 * 24),
+            },
+          }
           : {}),
       },
       select: {
@@ -41,7 +54,7 @@ export async function GET(req: Request) {
 
     new UTApi().deleteFiles(
       unusedMedia.map(
-        (m) =>
+        (m: { url: string }) =>
           m.url.split(`/a/${process.env.NEXT_PUBLIC_UPLOADTHING_APP_ID}/`)[1],
       ),
     );
@@ -49,7 +62,7 @@ export async function GET(req: Request) {
     await prisma.media.deleteMany({
       where: {
         id: {
-          in: unusedMedia.map((m) => m.id),
+          in: unusedMedia.map((m: { id: string }) => m.id),
         },
       },
     });
