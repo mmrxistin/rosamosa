@@ -102,10 +102,10 @@ model Yek {
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
   userId      String
-  user        User     @relation(fields: [yekUserId], references: [id], onDelete: Cascade)
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
   attachments Media[]
 
-  @@index([yekUserId])
+  @@index([userId])
 }
 
 model yekayeke {
@@ -114,10 +114,10 @@ model yekayeke {
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
   userId      String
-  user        User     @relation(fields: [yekayekeUserId], references: [id], onDelete: Cascade)
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
   attachments Media[]
 
-  @@index([yekayekeUserId])
+  @@index([userId])
 }
 
 model Tefsir {
@@ -126,10 +126,10 @@ model Tefsir {
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
   userId      String
-  user        User     @relation(fields: [tefsirUserId], references: [id], onDelete: Cascade)
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
   attachments Media[]
 
-  @@index([tefsirUserId])
+  @@index([userId])
 }
 
 model Car {
@@ -138,10 +138,10 @@ model Car {
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
   userId      String
-  user        User     @relation(fields: [carUserId], references: [id], onDelete: Cascade)
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
   attachments Media[]
 
-  @@index([carUserId])
+  @@index([userId])
 }
 
 model du {
@@ -150,10 +150,10 @@ model du {
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
   userId      String
-  user        User     @relation(fields: [duUserId], references: [id], onDelete: Cascade)
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
   attachments Media[]
 
-  @@index([duUserId])
+  @@index([userId])
 }
 
 model Duyem {
@@ -162,10 +162,10 @@ model Duyem {
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
   userId      String
-  user        User     @relation(fields: [duyemUserId], references: [id], onDelete: Cascade)
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
   attachments Media[]
 
-  @@index([duyemUserId])
+  @@index([userId])
 }
 
 model se {
@@ -174,10 +174,10 @@ model se {
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
   userId      String
-  user        User     @relation(fields: [seUserId], references: [id], onDelete: Cascade)
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
   attachments Media[]
 
-  @@index([seUserId])
+  @@index([userId])
 }
 
 model Penc {
@@ -186,10 +186,10 @@ model Penc {
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
   userId      String
-  user        User     @relation(fields: [pencUserId], references: [id], onDelete: Cascade)
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
   attachments Media[]
 
-  @@index([pencUserId])
+  @@index([userId])
 }
 
 model Media {
