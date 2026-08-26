@@ -43,7 +43,8 @@ export const metadata: Metadata = {
     "Yalçın İnşaat · İnşaat Firması · Konut Projeleri · Ticari Yapılar · Altyapı · Tadilat.",
   ],
 };
-
+// Elhamdulillah Elhamdulillah Elhamdulillah
+// Elhamdulillahirabbilalemin
 export default function RootLayout({
   children,
 }: Readonly<{
