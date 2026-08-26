@@ -35,6 +35,14 @@ model User {
   diroks        Dirok[]
   rojnames      Rojname[]
   xanes         Xane[]
+  yeks          Yek[]
+  yekayekes     yekayeke[]
+  tefsirs       Tefsir[]
+  cars          Car[]
+  dus           du[]
+  duyems        Duyem[]
+  ses           se[]
+  pencs         Penc[]
   malperNews    MalperNews[]
   malperReports MalperReport[]
 }
@@ -88,6 +96,102 @@ model Xane {
   attachments Media[]
 }
 
+model Yek {
+  id          String   @id @default(cuid())
+  content     String[]
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  userId      String
+  user        User     @relation(fields: [yekUserId], references: [id], onDelete: Cascade)
+  attachments Media[]
+
+  @@index([yekUserId])
+}
+
+model yekayeke {
+  id          String   @id @default(cuid())
+  content     String[]
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  userId      String
+  user        User     @relation(fields: [yekayekeUserId], references: [id], onDelete: Cascade)
+  attachments Media[]
+
+  @@index([yekayekeUserId])
+}
+
+model Tefsir {
+  id          String   @id @default(cuid())
+  content     String[]
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  userId      String
+  user        User     @relation(fields: [tefsirUserId], references: [id], onDelete: Cascade)
+  attachments Media[]
+
+  @@index([tefsirUserId])
+}
+
+model Car {
+  id          String   @id @default(cuid())
+  content     String[]
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  userId      String
+  user        User     @relation(fields: [carUserId], references: [id], onDelete: Cascade)
+  attachments Media[]
+
+  @@index([carUserId])
+}
+
+model du {
+  id          String   @id @default(cuid())
+  content     String[]
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  userId      String
+  user        User     @relation(fields: [duUserId], references: [id], onDelete: Cascade)
+  attachments Media[]
+
+  @@index([duUserId])
+}
+
+model Duyem {
+  id          String   @id @default(cuid())
+  content     String[]
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  userId      String
+  user        User     @relation(fields: [duyemUserId], references: [id], onDelete: Cascade)
+  attachments Media[]
+
+  @@index([duyemUserId])
+}
+
+model se {
+  id          String   @id @default(cuid())
+  content     String[]
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  userId      String
+  user        User     @relation(fields: [seUserId], references: [id], onDelete: Cascade)
+  attachments Media[]
+
+  @@index([seUserId])
+}
+
+model Penc {
+  id          String   @id @default(cuid())
+  content     String[]
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  userId      String
+  user        User     @relation(fields: [pencUserId], references: [id], onDelete: Cascade)
+  attachments Media[]
+
+  @@index([pencUserId])
+}
+
 model Media {
   id        String    @id @default(cuid())
   url       String
@@ -103,6 +207,22 @@ model Media {
   rojname   Rojname? @relation(fields: [rojnameId], references: [id])
   xaneId    String?
   xane      Xane?    @relation(fields: [xaneId], references: [id])
+  yekId       String?
+  yek         Yek?       @relation(fields: [yekId], references: [id])
+  yekayekeId  String?
+  yekayeke    yekayeke?  @relation(fields: [yekayekeId], references: [id])
+  tefsirId    String?
+  tefsir      Tefsir?    @relation(fields: [tefsirId], references: [id])
+  carId       String?
+  car         Car?       @relation(fields: [carId], references: [id])
+  duId        String?
+  du          du?        @relation(fields: [duId], references: [id])
+  duyemId     String?
+  duyem       Duyem?     @relation(fields: [duyemId], references: [id])
+  seId        String?
+  se          se?        @relation(fields: [seId], references: [id])
+  pencId      String?
+  penc        Penc?      @relation(fields: [pencId], references: [id])
 }
 
 enum MediaType {

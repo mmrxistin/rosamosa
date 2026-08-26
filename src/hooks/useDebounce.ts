@@ -1,10 +1,10 @@
 // Bismillahirrahmanirahim
 // Elhamdulillahirabbulalemin
-// Es-selatu vesselamu ala rasulina Muhammedin ve ala alihi ve sahbihi ecmain
-// La havle ve la kuvvete illa billahil aliyyil azim
+// Es-selatu vesselamu ala rasulina Muhammedin 
+// La havle ve la kuvvete illa billahil Aliyyil Azim
 // Allah u Ekber
-// La ilahe illallah Muhammedur Resulullah
-// Subhanallah, Elhamdulillah, Allahu Ekber, La ilahe illallah
+// La ilahe illAllah Muhammedur Resulullah
+// SubhanAllah, Elhamdulillah, Allahu Ekber, La ilahe illAllah
 // Estağfirulllah El-Azim
 
 
