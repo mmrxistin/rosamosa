@@ -1,9 +1,9 @@
 // Elhamdulillahirrabbulalemin
 // Esselatu vesselamu ala seyyidina Muhammedin ve ala alihi ve sahbihi ecmain
 // Subhanallah, Elhamdulillah, Allahu Ekber
-// La ilahe illallah
+// La ilahe illallah 
 // Allahu Ekber, Allahu Ekber, Allahu Ekber, La ilahe illallah
-// Bila Allah Azze ve Celle me ji sunneta Resulullah Muhammed (s.a.v) neqetine, amin rabbal alemin
+// Bila Allah Azze ve Celle me ji sunneta Resulullah Muhammed (s.a.v) neqetine, amin rabbal alemin 
 // Xeyni Allah tu Xweda tune
 
 "use server";
@@ -12,6 +12,7 @@ import { lucia } from "@/auth";
 import prisma from "@/lib/prisma";
 import { signUpSchema, SignUpValues } from "@/lib/validation";
 import { hash } from "@node-rs/argon2";
+import { generateIdFromEntropySize } from "lucia";
 import { isRedirectError } from "next/dist/client/components/redirect";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
@@ -28,6 +29,8 @@ export async function signUp(
       outputLen: 32,
       parallelism: 1,
     });
+
+    const userId = generateIdFromEntropySize(10);
 
     const existingUsername = await prisma.user.findFirst({
       where: {
@@ -59,18 +62,20 @@ export async function signUp(
       };
     }
 
-    const createdUser = await prisma.$transaction(async (tx) => {
-      return tx.user.create({
+    await prisma.$transaction(async (tx: { user: { create: (arg0: { data: { id: string; username: string; displayName: string; email: string; passwordHash: string; }; }) => any; }; }) => {
+      await tx.user.create({
         data: {
+          id: userId,
           username,
           displayName: username,
           email,
-          password: passwordHash,
+          passwordHash,
         },
       });
+     
     });
 
-    const session = await lucia.createSession(String(createdUser.id), {});
+    const session = await lucia.createSession(userId, {});
     const sessionCookie = lucia.createSessionCookie(session.id);
     cookies().set(
       sessionCookie.name,
@@ -78,7 +83,7 @@ export async function signUp(
       sessionCookie.attributes,
     );
 
-    return redirect("/xani");
+    return redirect("/malper");
   } catch (error) {
     if (isRedirectError(error)) throw error;
     console.error(error);

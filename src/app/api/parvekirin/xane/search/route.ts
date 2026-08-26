@@ -38,16 +38,14 @@ export async function GET(req: NextRequest) {
           {
             user: {
               displayName: {
-                contains: q,
-                mode: "insensitive",
+                search: searchQuery,
               },
             },
           },
           {
             user: {
               username: {
-                contains: q,
-                mode: "insensitive",
+                search: searchQuery,
               },
             },
           },

@@ -3,7 +3,7 @@
 // Es-selatu vesselamu ala rasulina Muhammedin 
 // Allah u Ekber, Allah u Ekber, Allah u Ekber, La ilahe illallah
 // SuphanAllah, Elhamdulillah, Allahu Ekber
-import { useSession } from "@/app/xani/SessionProvider";
+import { useSession } from "@/app/(main)/SessionProvider";
 import { useToast } from "@/components/ui/use-toast";
 import { RojnamePage } from "@/lib/types";
 import {

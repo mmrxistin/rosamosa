@@ -11,7 +11,7 @@
 
 import { validateRequest } from "@/auth";
 import prisma from "@/lib/prisma";
-import { getAgahiInclude, AgahiPage } from "@/lib/types";
+import { getYekInclude, YekPage } from "@/lib/types";
 import { NextRequest } from "next/server";
 
 export async function GET(
@@ -29,9 +29,9 @@ export async function GET(
       return Response.json({ error: "Unauthorized" }, { status: 401 });
     }
 
-    const posts = await prisma.agahi.findMany({
+    const posts = await prisma.yek.findMany({
       where: { userId },
-      include: getAgahiInclude(user.id),
+      include: getYekInclude(user.id),
       orderBy: { createdAt: "desc" },
       take: pageSize + 1,
       cursor: cursor ? { id: cursor } : undefined,
@@ -44,7 +44,7 @@ const data = {
          content: Array.isArray(post.content) ? post.content : [post.content]
        })),
        nextCursor,
-     } as unknown as AgahiPage;
+     } as unknown as YekPage;
  
 
     return Response.json(data);

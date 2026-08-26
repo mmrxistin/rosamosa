@@ -1,14 +1,11 @@
 // Bismillahirrahmanirahim
 // Elhamdulillahirrabbulalemin
-// Esselatu vesselamu ala seyyidina Muhammedin
-// SubhanAllah, Elhamdulillah, RAHIM-I Hamid Allahu Ekber
-// La ilahe illAllah u vahdehu la sherike leh, lehul mulku ve lehul hamdu
-// yuhyi ve yumit,biyadihil xayr  wa huwa 'ala kulli shay'in qadir
-// Seyyidina Muhammeden Abduhu ve Resuluhu
-// SubhanAllahi Hamidun Mecidi Ehed ve Bihamdihi, SubhanAllahil Azim
-// Allahu Ekber, Allahu Ekber, Allahu Ekber Ve Lillahil Hamd, La ilahe illAllah
+// Esselatu vesselamu ala seyyidina Muhammedin ve ala alihi ve sahbihi ecmain
+// Subhanallah, Elhamdulillah, RAHIM-I Hamid Allahu Ekber
+// La ilahe illallah 
+// Allahu Ekber, Allahu Ekber, Allahu Ekber, La ilahe illallah
 // Bila Allah Azze ve Celle me ji sunneta Resulullah Muhammed (s.a.v) neqetine, amin rabbal alemin 
-// Xeyni Allah tu Xweda tune,Allah yeke u tu şırike Allah tune ,pesında ji mulkda ji u spasi tene Allah re te kırın.
+// Xeyni Allah tu Xweda tune
 
 
 import { PrismaAdapter } from "@lucia-auth/adapter-prisma";
@@ -17,8 +14,7 @@ import { Lucia, Session, User } from "lucia";
 import { cookies } from "next/headers";
 import { cache } from "react";
 import prisma from "./lib/prisma";
-// SuphanAllahi Rabul Alemin, Elhamdulillahi Rabbil Alemin, Allahu Ekber, La ilahe illAllah u vahdehu la sherike leh, lehul mulku ve lehul hamdu yuhyi ve yumit,biyadihil xayr  wa huwa 'ala kulli shay'in qadir, Seyyidina Muhammeden Abduhu ve Resuluhu. SubhanAllahi Hamidun Mecidi Ehed ve Bihamdihi, SubhanAllahil Azim, Allahu Ekber, Allahu Ekber, Allahu Ekber Ve Lillahil Hamd, La ilahe illAllah
-// Bila Allah Azze ve Celle me ji sunneta Resulullah Muhammed (s.a.v) neqetine dibe ku, amin rabbal alemin , Xeyni Allah tu Xweda tune,Allah yeke u tu şırike Allah tune ,pesında ji mulkda ji u spasi tene Allah re te kırın.
+
 const adapter = new PrismaAdapter(prisma.session, prisma.user);
 
 export const lucia = new Lucia(adapter, {
@@ -42,7 +38,6 @@ export const lucia = new Lucia(adapter, {
 declare module "lucia" {
   interface Register {
     Lucia: typeof lucia;
-    UserId: string;
     DatabaseUserAttributes: DatabaseUserAttributes;
   }
 }

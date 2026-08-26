@@ -2,7 +2,7 @@
 
 "use client";
 
-import { useSession } from "@/app/xani/SessionProvider";
+import { useSession } from "@/app/(main)/SessionProvider";
 import {  UserData } from "@/lib/types";
 import Link from "next/link";
 import { PropsWithChildren } from "react";

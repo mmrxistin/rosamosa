@@ -6,7 +6,7 @@
 // Allah ümmetimizi korusun, birlik ve beraberliğimizi daim eylesin.
 "use client";
 
-import { useSession } from "@/app/xani/SessionProvider";
+import { useSession } from "@/app/(main)/SessionProvider";
 import LoadingButton from "@/components/LoadingButton";
 import { Button } from "@/components/ui/button";
 import UserAvatar from "@/components/UserAvatar";

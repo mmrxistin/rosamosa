@@ -23,13 +23,13 @@ export async function login(
       },
     });
 
-    if (!existingUser) {
+    if (!existingUser || !existingUser.passwordHash) {
       return {
         error: "Incorrect username or password",
       };
     }
 
-    const validPassword = await verify(existingUser.password, password, {
+    const validPassword = await verify(existingUser.passwordHash, password, {
       memoryCost: 19456,
       timeCost: 2,
       outputLen: 32,
@@ -42,7 +42,7 @@ export async function login(
       };
     }
 
-    const session = await lucia.createSession(String(existingUser.id), {});
+    const session = await lucia.createSession(existingUser.id, {});
     const sessionCookie = lucia.createSessionCookie(session.id);
     cookies().set(
       sessionCookie.name,
@@ -50,7 +50,7 @@ export async function login(
       sessionCookie.attributes,
     );
 
-    return redirect("/xani");
+    return redirect("/malper");
   } catch (error) {
     if (isRedirectError(error)) throw error;
     console.error(error);

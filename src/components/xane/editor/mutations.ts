@@ -6,7 +6,7 @@
 // Allah ümmetimizi korusun, birlik ve beraberliğimizi daim eylesin.
 
 
-import { useSession } from "@/app/xani/SessionProvider";
+import { useSession } from "@/app/(main)/SessionProvider";
 import { useToast } from "@/components/ui/use-toast";
 import { XanePage } from "@/lib/types";
 import {

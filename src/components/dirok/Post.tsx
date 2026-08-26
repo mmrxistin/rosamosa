@@ -5,7 +5,7 @@
 // Allah U Ekber, Allah U Ekber, Allah U Ekber, La ilahe illallah
 "use client";
 
-import { useSession } from "@/app/xani/SessionProvider";
+import { useSession } from "@/app/(main)/SessionProvider";
 import { DirokData } from "@/lib/types";
 import { cn, formatRelativeDate } from "@/lib/utils";
 import { Media } from "@prisma/client";

@@ -5,7 +5,7 @@
 // SuphanAllah, Elhamdulillah, Allahu Ekber
 "use client";
 
-import { useSession } from "@/app/xani/SessionProvider";
+import { useSession } from "@/app/(main)/SessionProvider";
 import { RojnameData } from "@/lib/types";
 import { cn, formatRelativeDate } from "@/lib/utils";
 import { Media } from "@prisma/client";

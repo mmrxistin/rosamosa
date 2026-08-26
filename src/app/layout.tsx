@@ -1,29 +1,44 @@
-// Bismillahirrahmanirrahim 
+// Bismillahirrahmanirrahim
 // Elhamdulillahirabbulalemin
-//        اَشْهَدُ اَنْ لاَ اِلٰهَ اِلاَّ اللّٰهُ وَاَشْهَدُ اَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ
-// Esselatu vesselamu ala rasulillah 
+// Esselatu vesselamu ala rasulillah
+// Allahumme salli ala seyyidina Muhammedin
 // Allah u Ekber, Allahu Ekber, Allahu Ekber
-// La ilahe illallah, Allahu Ekber, Allahu Ekber ve lillahi'l-hamd
-// Subhanallah, Elhamdulillah, Allahu Ekber
-
+// La ilahe illAllah, Allahu Ekber,
+// SubhanAllah, Elhamdulillah, Allahu Ekber
+// Estaxfurullah El Azim
+// Allahu Ekber ve Lillahil Hamd
 import React from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { NextSSRPlugin } from "@uploadthing/react/next-ssr-plugin";
 import type { Metadata } from "next";
 import { ThemeProvider } from "next-themes";
+import localFont from "next/font/local";
 import { extractRouterConfig } from "uploadthing/server";
 import { fileRouter } from "./api/uploadthing/core";
-import "bootstrap/dist/css/bootstrap.css";
 import "./globals.css";
 import ReactQueryProvider from "./ReactQueryProvider";
+// Elhamdulillah Elhamdulillah Elhamdulillah
+// Elhamdulillahirabbilalemin
+// La îlahe îll Allah û vahdehû(Esma ul Husna) la şerîke leh, lehul-mülkü ve lehul-hamdü .
+
+
+
+const geistSans = localFont({
+  src: "./fonts/GeistVF.woff",
+  variable: "--font-geist-sans",
+});
+const geistMono = localFont({
+  src: "./fonts/GeistMonoVF.woff",
+  variable: "--font-geist-mono",
+});
 
 export const metadata: Metadata = {
   title: {
-    template: "%s | Rosa Kadın Derneği",
-    default: "Rosa Kadın Derneği - Kadınların güçlenmesi için birlikte",
+    template: "%s | Yeni Yaşam ",
+    default: " Yeni Yaşam Gazetesi",
   },
-  description: "Rosa Kadın Derneği, kadınların güçlenmesini, eğitimini ve toplumsal dayanışmasını destekleyen sivil toplum kuruluşudur.",
-  keywords: ["Rosa Kadın Derneği", "kadın", "kadın hakları", "toplumsal dayanışma", "kadın eğitimi", "kadın sağlığı", "sivil toplum", "toplumsal cinsiyet", "örgüt", "yardımlaşma"],
+  description: "ni Yaşam Gazetesi Yeni Yaşam Gazetesi | Yeni Yaşam  · Anasayfa · Gündem · Güncel ",
+  keywords: [" Yaşam · Söyleşi · Forum · Politika · Günün Manşeti."],
 };
 
 export default function RootLayout({
@@ -33,7 +48,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <NextSSRPlugin routerConfig={extractRouterConfig(fileRouter)} />
         <ReactQueryProvider>
           <ThemeProvider
@@ -42,7 +57,8 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            {children}
+              {children}
+
           </ThemeProvider>
         </ReactQueryProvider>
         <Toaster />
@@ -50,3 +66,35 @@ export default function RootLayout({
     </html>
   );
 }
+
+
+// Elhamdulillah Elhamdulillah Elhamdulillah
+// Elhamdulillahirabbilalemin
+
+//La ilahe illAllah Muhammeden abduhu ve resuluhu
+
+// Elhamdulillah Elhamdulillah Elhamdulillah
+// Elhamdulillahirabbilalemin
+
+
+
+
+
+
+export function Footer() {
+  return (
+    <footer className="flex items-center justify-center w-full h-16 bg-gray-800 text-white">
+      <p className="text-sm">© {new Date().getFullYear()} GONDWANA Software Solutions</p>
+    </footer>
+  );
+
+}
+// Elhamdulillah Elhamdulillah Elhamdulillah
+// Elhamdulillahirabbilalemin
+// La îlahe îll Allah û vahdehû(Esma ul Husna) la şerîke leh, lehul-mülkü ve lehul-hamdü ,
+
+
+// Yuhyî ve yumît
+// Bîyadîhîl xayr
+// ve hüve alâ külli şeyin kadîr
+// ALLAH U EKBER VELİLLAHIL HAMD
