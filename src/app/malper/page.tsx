@@ -44,16 +44,16 @@
                  <div className="flex items-center gap-2 mb-2">
                    <span className="size-3 bg-[#b80000]" />
                    <span className="text-sm font-bold uppercase tracking-wider text-[#b80000]">
-                     Son Dakika
-                   </span>
-                 </div>
+                         Son Projeler
+                       </span>
+                     </div>
 
-                 <h1 className="text-3xl md:text-4xl font-black tracking-tight">
-                   Son Dakika Haberleri
-                 </h1>
+                     <h1 className="text-3xl md:text-4xl font-black tracking-tight">
+                       Yalçın İnşaat Güncel Projeleri
+                     </h1>
 
-                 <p className="text-gray-600 mt-2">
-                   Türkiye ve dünyadan en güncel gelişmeler
+                     <p className="text-gray-600 mt-2">
+                       Tamamlanan ve devam eden projelerimiz
                  </p>
                </div>
 
@@ -61,7 +61,7 @@
                  href="/malper/yek"
                  className="hidden md:block text-[#b80000] font-bold hover:underline"
                >
-                 Tüm Haberler →
+                 Tüm Projeler →
                </a>
              </div>
 
@@ -74,25 +74,24 @@
                  </div>
 
                  <span className="text-xs font-black text-[#b80000] uppercase">
-                   GÜNDEM
-                 </span>
+                     KONUT
+                   </span>
 
-                 <h2 className="text-3xl md:text-4xl font-black leading-tight mt-2 mb-3 transition-colors hover:text-[#b80000]">
-                   Türkiye'den güncel gelişmeler ve son dakika haberleri
-                 </h2>
+                   <h2 className="text-3xl md:text-4xl font-black leading-tight mt-2 mb-3 transition-colors hover:text-[#b80000]">
+                     Modern ve konforlu konut projelerimiz
+                   </h2>
 
-                 <p className="text-gray-600 text-base md:text-lg leading-relaxed">
-                   Ülke gündeminde yaşanan son gelişmeler, önemli açıklamalar
-                   ve güncel haberler burada.
-                 </p>
+                   <p className="text-gray-600 text-base md:text-lg leading-relaxed">
+                     Deprem yönetmeliğine uygun, enerji verimli ve estetik konut projelerimizi keşfedin.
+                   </p>
 
                  <a
                    href="/malper/du"
                    className="inline-block mt-4 text-[#b80000] font-bold hover:underline"
                  >
-                   Haberin Devamını Oku →
-                 </a>
-               </article>
+                       Haberin Detayları →
+                     </a>
+                   </article>
 
                <div className="lg:col-span-5 grid grid-cols-1 gap-5">
 
@@ -101,23 +100,22 @@
                    <div className="h-44 bg-gray-100 overflow-hidden mb-4">
                      <img
                        src="/images/haber-dunya.jpg"
-                       alt="Dünya haberleri"
-                       className="w-full h-full object-cover"
-                     />
-                   </div>
+                       alt="Ticari yapı projelerimiz"
+                           className="w-full h-full object-cover"
+                         />
+                       </div>
 
-                   <span className="text-xs font-black text-[#b80000]">
-                     DÜNYA
-                   </span>
+                       <span className="text-xs font-black text-[#b80000]">
+                         TİCARİ YAPILAR
+                       </span>
 
-                   <h3 className="text-2xl font-black mt-2 leading-tight transition-colors hover:text-[#b80000]">
-                     Dünyadan son gelişmeler ve önemli haberler
-                   </h3>
+                       <h3 className="text-2xl font-black mt-2 leading-tight transition-colors hover:text-[#b80000]">
+                         İş merkezleri, plazalar ve ofis projeleri
+                       </h3>
 
-                   <p className="text-gray-600 mt-2">
-                     Dünyada yaşanan siyasi, ekonomik ve toplumsal gelişmeleri
-                     yakından takip edin.
-                   </p>
+                       <p className="text-gray-600 mt-2">
+                         İşletmenize değer katan modern ticari yapılar inşa ediyoruz.
+                       </p>
                  </article>
 
                  {/* Karta 2: Fıkıh */}
@@ -127,24 +125,23 @@
                    </div>
 
                    <span className="text-xs font-black text-[#b80000]">
-                     EKONOMİ
-                   </span>
+                       ALTYAPI
+                     </span>
 
-                   <h3 className="text-2xl font-black mt-2 leading-tight transition-colors hover:text-[#b80000]">
-                     Ekonomiden güncel veriler ve son gelişmeler
-                   </h3>
+                     <h3 className="text-2xl font-black mt-2 leading-tight transition-colors hover:text-[#b80000]">
+                       Altyapı ve çevre düzenleme projeleri
+                     </h3>
 
-                   <p className="text-gray-600 mt-2">
-                     Piyasalar, döviz, altın, finans ve ekonomi dünyasından
-                     önemli gelişmeler.
-                   </p>
+                     <p className="text-gray-600 mt-2">
+                       Yol, su, kanalizasyon ve altyapı hizmetlerinde uzman ekibimizle yanınızdayız.
+                     </p>
 
-                   <a
-                     href="/malper/se"
-                     className="inline-block mt-3 text-[#b80000] font-bold hover:underline"
-                   >
-                     Ekonomi Haberleri →
-                   </a>
+                     <a
+                       href="/malper/se"
+                       className="inline-block mt-3 text-[#b80000] font-bold hover:underline"
+                     >
+                       Altyapı Projeleri →
+                     </a>
                  </article>
 
                </div>
@@ -157,30 +154,29 @@
                  <div className="h-44 bg-gray-100 overflow-hidden mb-4">
                    <img
                      src="/images/haber-spor.jpg"
-                     alt="Spor haberleri"
+                     alt="Tadilat ve renovasyon projeleri"
                      className="w-full h-full object-cover"
                    />
                  </div>
 
                  <span className="text-xs font-black text-[#b80000]">
-                   SPOR
-                 </span>
+                       TADİLAT & RENOVASYON
+                   </span>
 
-                 <h3 className="text-xl font-black mt-2">
-                   Spor dünyasından son dakika gelişmeleri
-                 </h3>
+                   <h3 className="text-xl font-black mt-2">
+                     Bina güçlendirme ve tadilat hizmetleri
+                   </h3>
 
-                 <p className="text-gray-600 mt-2">
-                   Futbol, basketbol ve diğer spor dallarından maç sonuçları,
-                   transferler ve son dakika haberleri.
-                 </p>
+                   <p className="text-gray-600 mt-2">
+                     Mevcut yapılarınızı yeniliyoruz, güçlendiriyoruz ve modernize ediyoruz.
+                   </p>
 
-                 <a
-                   href="/malper/car"
-                   className="inline-block mt-3 text-[#b80000] font-bold hover:underline"
-                 >
-                   Spor Haberleri →
-                 </a>
+                   <a
+                     href="/malper/car"
+                     className="inline-block mt-3 text-[#b80000] font-bold hover:underline"
+                   >
+                     Tadilat Hizmetleri →
+                   </a>
                </article>
 
                {/* Karta 3: Tarîxê Îslamî */}
@@ -188,30 +184,29 @@
                  <div className="h-44 bg-gray-100 overflow-hidden mb-4">
                    <img
                      src="/images/haber-kultur.jpg"
-                     alt="Kültür ve sanat haberleri"
+                     alt="Anahtar teslim proje örnekleri"
                      className="w-full h-full object-cover"
                    />
                  </div>
 
                  <span className="text-xs font-black text-[#b80000]">
-                   KÜLTÜR & SANAT
-                 </span>
+                       PROJE YÖNETİMİ
+                   </span>
 
-                 <h3 className="text-xl font-black mt-2">
-                   Kültür, sanat ve yaşamdan haberler
-                 </h3>
+                   <h3 className="text-xl font-black mt-2">
+                     Anahtar teslim proje yönetimi
+                   </h3>
 
-                 <p className="text-gray-600 mt-2">
-                   Kültür, sanat, kitap, sinema, etkinlikler ve yaşam
-                   dünyasından güncel içerikler.
-                 </p>
+                   <p className="text-gray-600 mt-2">
+                     Projeden teslime kadar tüm süreci planlıyor, yönetiyor ve zamanında teslim ediyoruz.
+                   </p>
 
-                 <a
-                   href="/malper/xane"
-                   className="inline-block mt-3 text-[#b80000] font-bold hover:underline"
-                 >
-                   Kültür Haberleri →
-                 </a>
+                   <a
+                     href="/malper/xane"
+                     className="inline-block mt-3 text-[#b80000] font-bold hover:underline"
+                   >
+                     Proje Yönetimi →
+                   </a>
                </article>
 
                <article className="py-6 md:pl-5">
@@ -224,20 +219,19 @@
                  </span>
 
                  <h3 className="text-xl font-black mt-2">
-                   Teknoloji dünyasından yeni gelişmeler
+                   Teknoloji ve malzeme kalitesinde yeni standartlar
                  </h3>
 
                  <p className="text-gray-600 mt-2">
-                   Teknoloji, yapay zekâ, internet, mobil cihazlar ve dijital
-                   dünyadaki son gelişmeler.
-                 </p>
+                     Projelerimizde kullandığımız modern yapı teknolojileri ve kaliteli malzemeler.
+                   </p>
 
-                 <a
-                   href="/malper/penc"
-                   className="inline-block mt-3 text-[#b80000] font-bold hover:underline"
-                 >
-                   Teknoloji Haberleri →
-                 </a>
+                   <a
+                     href="/malper/penc"
+                     className="inline-block mt-3 text-[#b80000] font-bold hover:underline"
+                   >
+                     Detaylı Bilgi →
+                   </a>
                </article>
 
              </div>
@@ -250,16 +244,16 @@
                <div className="flex items-center gap-2 mb-2">
                  <span className="size-3 bg-[#b80000]" />
                  <span className="text-sm font-bold text-[#b80000] uppercase">
-                   Haber Akışı
-                 </span>
+                       Devam Eden Projeler
+                   </span>
                </div>
 
                <h2 className="text-2xl md:text-3xl font-black">
-                 Güncel Haberler
+                 Güncel Projelerimiz
                </h2>
 
                <p className="text-gray-600 mt-1">
-                 Günün öne çıkan haberleri ve son dakika gelişmeleri
+                 Şantiyelerimizdeki son durum ve tamamlanan projeler
                </p>
              </div>
 
@@ -277,16 +271,15 @@
 
                        <div>
                          <span className="text-xs text-[#b80000] font-black">
-                           SON DAKİKA
-                         </span>
+                             DEVAM EDİYOR
+                           </span>
 
-                         <h3 className="text-2xl font-black mt-2 mb-2 leading-tight transition-colors hover:text-[#b80000]">
-                           Günün öne çıkan gelişmeleri ve son dakika haberleri
-                         </h3>
+                           <h3 className="text-2xl font-black mt-2 mb-2 leading-tight transition-colors hover:text-[#b80000]">
+                             Yeni konut kompleksi inşaatımız sürüyor
+                           </h3>
 
-                         <p className="text-gray-600 leading-relaxed">
-                           Türkiye ve dünyadan gün içerisinde yaşanan önemli
-                           gelişmelerin detayları.
+                           <p className="text-gray-600 leading-relaxed">
+                             Şantiyemizde çalışmalar planlandığı gibi ilerliyor, teslim tarihi korunuyor.
                          </p>
 
                          <a
@@ -306,23 +299,22 @@
                        <div className="w-full md:w-60 h-40 bg-gray-100 overflow-hidden shrink-0">
                          <img
                            src="/images/haber-2.jpg"
-                           alt="Gündem haberi"
+                           alt="Konut projesi"
                            className="w-full h-full object-cover"
                          />
                        </div>
 
                        <div>
                          <span className="text-xs text-[#b80000] font-black">
-                           GÜNDEM
-                         </span>
+                             KONUT
+                           </span>
 
-                         <h3 className="text-2xl font-black mt-2 mb-2 leading-tight transition-colors hover:text-[#b80000]">
-                           Gündemin nabzını tutan önemli gelişmeler
-                         </h3>
+                           <h3 className="text-2xl font-black mt-2 mb-2 leading-tight transition-colors hover:text-[#b80000]">
+                             Villa ve müstakil ev projelerimiz
+                           </h3>
 
-                         <p className="text-gray-600 leading-relaxed">
-                           Ülke gündemindeki gelişmeler, açıklamalar ve kamuoyunu
-                           ilgilendiren haberler.
+                           <p className="text-gray-600 leading-relaxed">
+                             Özel tasarım villa ve müstakil evlerde yaşam alanı standartlarını yükseltiyoruz.
                          </p>
 
                          <Car/>
@@ -347,16 +339,15 @@
 
                        <div>
                          <span className="text-xs text-[#b80000] font-black">
-                           DÜNYA
-                         </span>
+                             TİCARİ
+                           </span>
 
-                         <h3 className="text-2xl font-black mt-2 mb-2 leading-tight transition-colors hover:text-[#b80000]">
-                           Dünyada yaşanan son gelişmeler
-                         </h3>
+                           <h3 className="text-2xl font-black mt-2 mb-2 leading-tight transition-colors hover:text-[#b80000]">
+                             Yeni iş merkezi projemiz tamamlandı
+                           </h3>
 
-                         <p className="text-gray-600 leading-relaxed">
-                           Uluslararası gündemde öne çıkan gelişmeler ve son
-                           dakika haberleri.
+                           <p className="text-gray-600 leading-relaxed">
+                             Modern ofis ve ticari alanlarla yeni iş merkezimiz hizmete açıldı.
                          </p>
 
                          <Rojnm/>
@@ -380,7 +371,7 @@
                  <div className="bg-[#f3f3f3] border-t-4 border-[#b80000] p-6">
 
                    <h2 className="text-xl font-black mb-5 border-b border-gray-300 pb-3">
-                     Çok Okunan Haberler
+                     Öne Çıkan Projeler
                    </h2>
 
                    <div className="space-y-0">
@@ -395,8 +386,8 @@
 
                        <div>
                          <h3 className="font-bold transition-colors group-hover:text-[#b80000]">
-                           Günün en çok okunan haberleri
-                         </h3>
+                             En çok ilgi gören konut projemiz
+                           </h3>
 
                          <span className="text-xs text-gray-500">
                            5 dakika önce
@@ -416,8 +407,8 @@
 
                        <div>
                          <h3 className="font-bold transition-colors group-hover:text-[#b80000]">
-                           Gündemde büyük yankı uyandıran gelişme
-                         </h3>
+                             Yeni başlayan büyük ölçekli şantiyemiz
+                           </h3>
 
                          <span className="text-xs text-gray-500">
                            15 dakika önce
@@ -435,8 +426,8 @@
 
                        <div>
                          <h3 className="font-bold transition-colors group-hover:text-[#b80000]">
-                           Ekonomide günün önemli gelişmeleri
-                         </h3>
+                             Ticari yapı yatırımlarımız ve yeni projeler
+                           </h3>
 
                          <span className="text-xs text-gray-500">
                            30 dakika önce
@@ -454,8 +445,8 @@
 
                        <div>
                          <h3 className="font-bold transition-colors group-hover:text-[#b80000]">
-                           Spor dünyasında son dakika
-                         </h3>
+                             Altyapı çalışmalarında son durum
+                           </h3>
 
                          <span className="text-xs text-gray-500">
                            45 dakika önce
@@ -475,7 +466,7 @@
 
              <div className="border-b-4 border-[#1f1f1f] pb-3 mb-6">
                <h2 className="text-2xl font-black">
-                 Kategoriler
+                 Hizmet Alanlarımız
                </h2>
              </div>
 
@@ -483,46 +474,46 @@
 
                <div className="bg-[#b80000] text-white p-6 transition-colors hover:bg-[#990000]">
                  <span className="text-xs font-bold opacity-80">
-                   GÜNDEM
-                 </span>
+                     KONUT
+                   </span>
 
-                 <h3 className="text-2xl font-black mt-2">
-                   Türkiye Gündemi
-                 </h3>
+                   <h3 className="text-2xl font-black mt-2">
+                     Konut İnşaatı
+                   </h3>
 
-                 <a
-                   href="/haberler/gundem"
-                   className="inline-block mt-6 font-bold underline"
-                 >
-                   Haberleri Gör →
+                   <a
+                     href="/haberler/gundem"
+                     className="inline-block mt-6 font-bold underline"
+                   >
+                     Projeleri Gör →
                  </a>
                </div>
 
                <div className="bg-[#f3f3f3] text-[#1f1f1f] border-t md:border-t-0 md:border-l border-gray-300 p-6 transition-colors hover:bg-gray-200">
                  <span className="text-xs font-bold text-[#b80000]">
-                   EKONOMİ
-                 </span>
+                     ALTYAPI
+                   </span>
 
-                 <h3 className="text-2xl font-black mt-2">
-                   Ekonomi Haberleri
-                 </h3>
+                   <h3 className="text-2xl font-black mt-2">
+                     Altyapı Projeleri
+                   </h3>
 
-                 <a
-                   href="/haberler/ekonomi"
-                   className="inline-block mt-6 text-[#b80000] font-bold underline"
-                 >
-                   Haberleri Gör →
+                   <a
+                     href="/haberler/ekonomi"
+                     className="inline-block mt-6 text-[#b80000] font-bold underline"
+                   >
+                     Projeleri Gör →
                  </a>
                </div>
 
                <div className="bg-[#f3f3f3] text-[#1f1f1f] border-t md:border-t-0 md:border-l border-gray-300 p-6 transition-colors hover:bg-gray-200">
                  <span className="text-xs font-bold text-[#b80000]">
-                   SPOR
-                 </span>
+                     TADİLAT
+                   </span>
 
-                 <h3 className="text-2xl font-black mt-2">
-                   Spor Haberleri
-                 </h3>
+                   <h3 className="text-2xl font-black mt-2">
+                     Tadilat ve Renovasyon
+                   </h3>
 
                  <Se/>
 
@@ -530,18 +521,18 @@
                    href="/haberler/spor"
                    className="inline-block mt-6 text-[#b80000] font-bold underline"
                  >
-                   Haberleri Gör →
+                   Projeleri Gör →
                  </a>
                </div>
 
                <div className="bg-[#f3f3f3] text-[#1f1f1f] border-t md:border-t-0 md:border-l border-gray-300 p-6 transition-colors hover:bg-gray-200">
                  <span className="text-xs font-bold text-[#b80000]">
-                   DÜNYA
-                 </span>
+                     TİCARİ YAPILAR
+                   </span>
 
-                 <h3 className="text-2xl font-black mt-2">
-                   Dünya Haberleri
-                 </h3>
+                   <h3 className="text-2xl font-black mt-2">
+                     Ticari Yapı Projeleri
+                   </h3>
 
                  <Xane/>
 
@@ -549,7 +540,7 @@
                    href="/haberler/dunya"
                    className="inline-block mt-6 text-[#b80000] font-bold underline"
                  >
-                   Haberleri Gör →
+                   Projeleri Gör →
                  </a>
                </div>
 

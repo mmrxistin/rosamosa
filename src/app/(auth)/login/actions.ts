@@ -4,7 +4,6 @@ import { lucia } from "@/auth";
 import prisma from "@/lib/prisma";
 import { loginSchema, LoginValues } from "@/lib/validation";
 import { verify } from "@node-rs/argon2";
-import { isRedirectError } from "next/dist/client/components/redirect";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 
@@ -25,7 +24,7 @@ export async function login(
 
     if (!existingUser || !existingUser.passwordHash) {
       return {
-        error: "Incorrect username or password",
+        error: "Kullanıcı adı veya şifre hatalı",
       };
     }
 
@@ -38,7 +37,7 @@ export async function login(
 
     if (!validPassword) {
       return {
-        error: "Incorrect username or password",
+        error: "Kullanıcı adı veya şifre hatalı",
       };
     }
 
@@ -52,10 +51,9 @@ export async function login(
 
     return redirect("/malper");
   } catch (error) {
-    if (isRedirectError(error)) throw error;
     console.error(error);
     return {
-      error: "Something went wrong. Please try again.",
+      error: "Bir şeyler ters gitti. Lütfen tekrar deneyin.",
     };
   }
 }

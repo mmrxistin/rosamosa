@@ -22,13 +22,12 @@ const Bingeh = () => (
       {/* BBC Brand Top Row */}
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center pb-8 mb-8 border-b border-zinc-800 gap-4">
         <div className="flex items-center gap-2">
-          <span className="bg-[#bb1919] text-white font-black text-xl px-2.5 py-1 tracking-tighter">Y</span>
-          <span className="bg-[#bb1919] text-white font-black text-xl px-2.5 py-1 tracking-tighter">Y</span>
-          <span className="bg-black border border-zinc-700 text-white font-black text-xl px-2.5 py-1 tracking-tighter">G</span>
-          <span className="text-2xl font-black text-white ml-2 tracking-tight">YENİ YAŞAM</span>
+          <span className="bg-[#bb1919] text-white font-black text-xl px-2.5 py-1 tracking-tighter">İ</span>
+          <span className="bg-black border border-zinc-700 text-white font-black text-xl px-2.5 py-1 tracking-tighter">N</span>
+          <span className="text-2xl font-black text-white ml-2 tracking-tight">YALÇIN İNŞAAT</span>
         </div>
         <p className="max-w-md text-sm text-zinc-400">
-          Dünyadan ve Türkiye'den tarafsız, bağımsız ve ilkeli haberciliğin adresi.
+          Yalçın İnşaat olarak sağlam temeller, modern tasarım ve zamanında teslim ile güvenilir inşaat hizmetleri sunuyoruz.
         </p>
       </div>
 
@@ -36,12 +35,12 @@ const Bingeh = () => (
         {/* Navigation Links Column 1 */}
         <div>
           <h5 className="inline-block text-sm font-bold uppercase tracking-wider text-white border-b-2 border-[#bb1919] pb-2 mb-4">
-            Gazetemiz
+            Firmamız
           </h5>
           <ul className="p-0 m-0 space-y-2.5 list-none text-sm text-zinc-300">
             <li><a href="/malper" className="transition-colors hover:text-red-500 hover:underline">Ana Sayfa</a></li>
-            <li><a href="/malper/Yek" className="transition-colors hover:text-red-500 hover:underline">Tüm Haberler</a></li>
-            <li><a href="/malper/Car" className="transition-colors hover:text-red-500 hover:underline">Son Dakika</a></li>
+            <li><a href="/malper/Yek" className="transition-colors hover:text-red-500 hover:underline">Hakkımızda</a></li>
+            <li><a href="/malper/Car" className="transition-colors hover:text-red-500 hover:underline">Projelerimiz</a></li>
             <li><a href="/hakkimizda" className="transition-colors hover:text-red-500 hover:underline">Hakkımızda</a></li>
             <li><a href="/iletisim" className="transition-colors hover:text-red-500 hover:underline">İletişim</a></li>
           </ul>
@@ -50,25 +49,25 @@ const Bingeh = () => (
         {/* Navigation Links Column 2 */}
         <div>
           <h5 className="inline-block text-sm font-bold uppercase tracking-wider text-white border-b-2 border-[#bb1919] pb-2 mb-4">
-            Kategoriler
+            Hizmet Alanları
           </h5>
           <ul className="p-0 m-0 space-y-2.5 list-none text-sm text-zinc-300">
-            <li><a href="/malper/Car" className="transition-colors hover:text-red-500 hover:underline">Gündem</a></li>
-            <li><a href="/malper/se" className="transition-colors hover:text-red-500 hover:underline">Dünya</a></li>
-            <li><a href="/malper/dirok" className="transition-colors hover:text-red-500 hover:underline">Ekonomi</a></li>
-            <li><a href="/malper/xane" className="transition-colors hover:text-red-500 hover:underline">Ekoloji</a></li>
-            <li><a href="/malper/rojname" className="transition-colors hover:text-red-500 hover:underline">Kadın</a></li>
+            <li><a href="/malper/Car" className="transition-colors hover:text-red-500 hover:underline">Konut İnşaatı</a></li>
+            <li><a href="/malper/se" className="transition-colors hover:text-red-500 hover:underline">Ticari Yapılar</a></li>
+            <li><a href="/malper/dirok" className="transition-colors hover:text-red-500 hover:underline">Altyapı ve Çevre Düzenleme</a></li>
+            <li><a href="/malper/xane" className="transition-colors hover:text-red-500 hover:underline">Tadilat ve Renovasyon</a></li>
+            <li><a href="/malper/rojname" className="transition-colors hover:text-red-500 hover:underline">Anahtar Teslim Projeler</a></li>
           </ul>
         </div>
 
         {/* Navigation Links Column 3 */}
         <div>
           <h5 className="inline-block text-sm font-bold uppercase tracking-wider text-white border-b-2 border-[#bb1919] pb-2 mb-4">
-            Servisler
+            Kurumsal
           </h5>
           <ul className="p-0 m-0 space-y-2.5 list-none text-sm text-zinc-300">
-            <li><a href="/malper/mmmmm" className="transition-colors hover:text-red-500 hover:underline">Yazarlar</a></li>
-            <li><a href="/malper/account" className="transition-colors hover:text-red-500 hover:underline">Forum</a></li>
+            <li><a href="/malper/mmmmm" className="transition-colors hover:text-red-500 hover:underline">Referanslar</a></li>
+            <li><a href="/malper/account" className="transition-colors hover:text-red-500 hover:underline">İletişim</a></li>
             <li><a href="/gizlilik" className="transition-colors hover:text-red-500 hover:underline">Gizlilik Politikası</a></li>
             <li><a href="/kullanim-sartlari" className="transition-colors hover:text-red-500 hover:underline">Kullanım Şartları</a></li>
             <li><a href="/kunye" className="transition-colors hover:text-red-500 hover:underline">Künye</a></li>
@@ -81,7 +80,7 @@ const Bingeh = () => (
             Bizi Takip Edin
           </h5>
           <p className="mb-4 text-xs leading-relaxed text-zinc-400">
-            Anlık haberler ve gelişmelerden haberdar olmak için sosyal medyada bizi takip edin.
+            Proje teklifleri ve güncel gelişmeler için sosyal medyada bizi takip edin.
           </p>
           <div className="flex gap-2 mb-6">
             <a href="https://facebook.com" target="_blank" rel="noreferrer" className="flex size-8 items-center justify-center rounded-none bg-zinc-800 text-white transition-colors hover:bg-[#bb1919]">
@@ -95,8 +94,8 @@ const Bingeh = () => (
             </a>
           </div>
           <div className="flex gap-2">
-            <a href="/login" className="bg-[#bb1919] px-4 py-2 text-xs font-bold text-white transition-colors hover:bg-[#901313]">Giriş</a>
-            <a href="/signup" className="border border-zinc-700 px-4 py-2 text-xs font-bold text-zinc-300 transition-colors hover:border-white">Üye Ol</a>
+            <a href="/login" className="bg-[#bb1919] px-4 py-2 text-xs font-bold text-white transition-colors hover:bg-[#901313]">Teklif Al</a>
+            <a href="/signup" className="border border-zinc-700 px-4 py-2 text-xs font-bold text-zinc-300 transition-colors hover:border-white">Bize Ulaşın</a>
           </div>
         </div>
       </div>
@@ -106,7 +105,7 @@ const Bingeh = () => (
     <div className="border-t border-zinc-900 bg-[#0a0a0a] py-4 text-xs text-zinc-500">
       <div className="mx-auto flex max-w-7xl flex-col items-center gap-3 px-4 md:flex-row md:justify-between">
         <div>
-          © {new Date().getFullYear()} YENİ YAŞAM GAZETESİ. Tüm hakları saklıdır. BBC stili güncel haber portalı.
+          © {new Date().getFullYear()} YALÇIN İNŞAAT. Tüm hakları saklıdır. Güvenilir ve kaliteli inşaat hizmetleri.
         </div>
         <div className="flex gap-4">
           <a href="/gizlilik" className="transition-colors text-zinc-500 hover:text-white">Gizlilik</a>
@@ -120,7 +119,7 @@ const Bingeh = () => (
 
 export default Bingeh;
 
-// Suphan Allah î Rezzaq î Kerîm î Vehhab î Ehed î Quddus î Haq ve Bîhamdîhî 
+// Suphan Allah î Rezzaq î Kerîm î Vehhab î Ehed î Quddus î Haq ve Bîhamdîhî
 // El Hamdu Lillah Kesira
 
 // La ilahe illALLAH u vahdehu la şerike leh, lehul-mulku ve lehul-hamdu.

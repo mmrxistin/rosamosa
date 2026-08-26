@@ -1,4 +1,4 @@
-// Bismillahirrahmanirrahim 
+// Bismillahirrahmanirrahim
 // Elhamdulillahi Rabbil Alamin
 // Essalatu vesselamu ala Resulina Muhammedin
 // Allah U Ekber, Allah U Ekber, Allah U Ekber, La ilahe illallah
@@ -14,7 +14,7 @@ import { yekayekePage } from "@/lib/types";
 import { useInfiniteQuery } from "@tanstack/react-query";
 import { Loader2 } from "lucide-react";
 
-export default function yekayeke() {
+export default function Yekayeke() {
   const {
     data,
     fetchNextPage,
@@ -56,7 +56,7 @@ export default function yekayeke() {
   if (status === "error") {
     return (
       <p className="text-center text-destructive">
-        Pirsgirek derket 
+        Pirsgirek derket
       </p>
     );
   }

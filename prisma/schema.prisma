@@ -18,23 +18,23 @@ datasource db {
 }
 
 model User {
-  id          String   @id @default(cuid())
-  email       String   @unique
-  username    String   @unique
-  displayName String
-  avatarUrl   String?
-  googleId    String?
-  bio         String?
-  password    String
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt
+  id           String   @id @default(cuid())
+  email        String   @unique
+  username     String   @unique
+  displayName  String
+  avatarUrl    String?
+  googleId     String?
+  bio          String?
+  passwordHash String?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
 
-  sessions Session[]
-  posts    Post[]
-  agahis   Agahi[]
-  diroks   Dirok[]
-  rojnames Rojname[]
-  xanes    Xane[]
+  sessions      Session[]
+  posts         Post[]
+  agahis        Agahi[]
+  diroks        Dirok[]
+  rojnames      Rojname[]
+  xanes         Xane[]
   malperNews    MalperNews[]
   malperReports MalperReport[]
 }
@@ -140,8 +140,8 @@ model MalperNews {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
-  authorId  String?
-  author    User?    @relation(fields: [authorId], references: [id], onDelete: SetNull)
+  authorId String?
+  author   User?   @relation(fields: [authorId], references: [id], onDelete: SetNull)
 }
 
 model MalperReport {
@@ -154,6 +154,6 @@ model MalperReport {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
-  authorId  String?
-  author    User?    @relation(fields: [authorId], references: [id], onDelete: SetNull)
+  authorId String?
+  author   User?   @relation(fields: [authorId], references: [id], onDelete: SetNull)
 }

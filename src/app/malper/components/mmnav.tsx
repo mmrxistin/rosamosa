@@ -24,11 +24,10 @@ function Mmmnavbar() {
           <div className="flex items-center gap-3">
             {/* Iconic BBC Block Branding */}
             <a href="/malper" className="flex items-center gap-1 group no-underline">
-              <span className="bg-[#bb1919] text-white font-black text-lg px-2 py-0.5 tracking-tighter">Y</span>
-              <span className="bg-[#bb1919] text-white font-black text-lg px-2 py-0.5 tracking-tighter">Y</span>
-              <span className="bg-black border border-zinc-700 text-white font-black text-lg px-2 py-0.5 tracking-tighter">G</span>
+              <span className="bg-[#bb1919] text-white font-black text-lg px-2 py-0.5 tracking-tighter">İ</span>
+              <span className="bg-black border border-zinc-700 text-white font-black text-lg px-2 py-0.5 tracking-tighter">N</span>
               <span className="font-extrabold text-xl text-white ml-2 tracking-tight transition-colors group-hover:text-red-500">
-                YENİ YAŞAM
+                YALÇIN İNŞAAT
               </span>
             </a>
           </div>
@@ -91,10 +90,10 @@ function Mmmnavbar() {
         <div className="max-w-7xl mx-auto flex items-center gap-3">
           <span className="flex items-center gap-1.5 shrink-0 bg-[#bb1919] text-white px-2 py-0.5 font-bold uppercase tracking-wider">
             <span className="size-2 rounded-full bg-white animate-pulse" />
-            SON DAKİKA
+            GÜNCEL PROJELER
           </span>
           <div className="truncate font-medium text-zinc-300">
-            Türkiye ve dünyadan en güncel gelişmeler, özel haberler ve canlı yayın takibi Yeni Yaşam'da.
+            Yalçın İnşaat ile sağlam temeller, modern projeler ve zamanında teslim — yeni konut ve ticari projelerimizi keşfedin.
           </div>
         </div>
       </div>

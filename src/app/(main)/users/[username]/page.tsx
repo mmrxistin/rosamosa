@@ -1,6 +1,6 @@
-// Bismillahirrahmanirrahim 
+// Bismillahirrahmanirrahim
 // Elhamdulillahirabbulalemin
-// Es-selatu vesselamu ala rasulina Muhammedin 
+// Es-selatu vesselamu ala rasulina Muhammedin
 //Suphanallah, Elhamdulillah, Allahu Ekber
 // Allah U Ekber, Allah U Ekber, Allah U Ekber, La ilahe illallah
 
@@ -71,8 +71,8 @@ export default async function Page({ params: { username } }: PageProps) {
       <div className="w-full min-w-0 space-y-5">
         <UserProfile user={user} loggedInUserId={loggedInUser.id} />
         <div className="rounded-2xl bg-card p-5 shadow-sm">
-        
-        {user.id==loggedInUser.id? <Home/> : <div> 
+
+        {user.id==loggedInUser.id? <Home/> : <div>
           <h2 className="text-center text-2xl font-bold">
             {user.displayName}&apos;ın İlanları
           </h2></div>}
@@ -90,7 +90,7 @@ interface UserProfileProps {
 }
 
 async function UserProfile({ user, loggedInUserId }: UserProfileProps) {
-  
+
 
   return (
     <div className="h-fit w-full space-y-5 rounded-2xl bg-card p-5 shadow-sm">
@@ -105,7 +105,7 @@ async function UserProfile({ user, loggedInUserId }: UserProfileProps) {
             <h1 className="text-3xl font-bold">{user.displayName}</h1>
             <div className="text-muted-foreground">@{user.username}</div>
           </div>
-          <div> {formatDate(user.createdAt, "MMM d, yyyy")} 'den beri üye</div>
+          <div> {formatDate(user.createdAt, "MMM d, yyyy")} &apos;den beri üye</div>
           <div className="flex items-center gap-3">
             <span>
               İlan Sayısı:{" "}

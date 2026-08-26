@@ -34,11 +34,14 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: {
-    template: "%s | Yeni Yaşam ",
-    default: " Yeni Yaşam Gazetesi",
+    template: "%s | Yalçın İnşaat",
+    default: "Yalçın İnşaat",
   },
-  description: "ni Yaşam Gazetesi Yeni Yaşam Gazetesi | Yeni Yaşam  · Anasayfa · Gündem · Güncel ",
-  keywords: [" Yaşam · Söyleşi · Forum · Politika · Günün Manşeti."],
+  description:
+    "Yalçın İnşaat | Ana Sayfa · Projeler · Hizmetler · Konut · Ticari Yapı · Altyapı İnşaatı. Güvenilir ve kaliteli inşaat hizmetleri.",
+  keywords: [
+    "Yalçın İnşaat · İnşaat Firması · Konut Projeleri · Ticari Yapılar · Altyapı · Tadilat.",
+  ],
 };
 
 export default function RootLayout({
@@ -57,7 +60,7 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-              {children}
+            {children}
 
           </ThemeProvider>
         </ReactQueryProvider>
@@ -84,7 +87,7 @@ export default function RootLayout({
 export function Footer() {
   return (
     <footer className="flex items-center justify-center w-full h-16 bg-gray-800 text-white">
-      <p className="text-sm">© {new Date().getFullYear()} GONDWANA Software Solutions</p>
+      <p className="text-sm">© {new Date().getFullYear()} Yalçın İnşaat. Tüm hakları saklıdır.</p>
     </footer>
   );
 

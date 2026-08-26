@@ -17,8 +17,8 @@ function page() {
           <span className="text-xs font-black uppercase tracking-wider text-[#bb1919]">
             Kategori
           </span>
-          <h1 className="mt-1 text-3xl font-black tracking-tight md:text-4xl">Ekoloji</h1>
-          <p className="mt-1 text-gray-600">Ekoloji ve çevre haberleri</p>
+          <h1 className="mt-1 text-3xl font-black tracking-tight md:text-4xl">Tadilat ve Renovasyon</h1>
+          <p className="mt-1 text-gray-600">Bina güçlendirme, yenileme ve modernizasyon hizmetlerimiz</p>
         </header>
 
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-12">
@@ -30,11 +30,11 @@ function page() {
             <div className="border-t-4 border-[#bb1919] bg-white p-6 shadow-sm">
               <h2 className="mb-4 border-b border-gray-200 pb-3 text-xl font-black">Kategoriler</h2>
               <ul className="space-y-3 text-sm font-semibold">
-                <li><a href="/malper/car" className="hover:text-[#bb1919]">Gündem</a></li>
-                <li><a href="/malper/se" className="hover:text-[#bb1919]">Dünya</a></li>
-                <li><a href="/malper/dirok" className="hover:text-[#bb1919]">Ekonomi</a></li>
-                <li><a href="/malper/xane" className="text-[#bb1919] hover:underline">Ekoloji</a></li>
-                <li><a href="/malper/rojname" className="hover:text-[#bb1919]">Kadın</a></li>
+                <li><a href="/malper/car" className="hover:text-[#bb1919]">Devam Eden Projeler</a></li>
+                <li><a href="/malper/se" className="hover:text-[#bb1919]">Ticari Yapılar</a></li>
+                <li><a href="/malper/dirok" className="hover:text-[#bb1919]">Altyapı</a></li>
+                <li><a href="/malper/xane" className="text-[#bb1919] hover:underline">Tadilat ve Renovasyon</a></li>
+                <li><a href="/malper/rojname" className="hover:text-[#bb1919]">Anahtar Teslim Projeler</a></li>
               </ul>
             </div>
           </aside>

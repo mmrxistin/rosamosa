@@ -1,9 +1,9 @@
 // Elhamdulillahirrabbulalemin
 // Esselatu vesselamu ala seyyidina Muhammedin ve ala alihi ve sahbihi ecmain
 // Subhanallah, Elhamdulillah, Allahu Ekber
-// La ilahe illallah 
+// La ilahe illallah
 // Allahu Ekber, Allahu Ekber, Allahu Ekber, La ilahe illallah
-// Bila Allah Azze ve Celle me ji sunneta Resulullah Muhammed (s.a.v) neqetine, amin rabbal alemin 
+// Bila Allah Azze ve Celle me ji sunneta Resulullah Muhammed (s.a.v) neqetine, amin rabbal alemin
 // Xeyni Allah tu Xweda tune
 
 "use server";
@@ -13,7 +13,6 @@ import prisma from "@/lib/prisma";
 import { signUpSchema, SignUpValues } from "@/lib/validation";
 import { hash } from "@node-rs/argon2";
 import { generateIdFromEntropySize } from "lucia";
-import { isRedirectError } from "next/dist/client/components/redirect";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 
@@ -43,7 +42,7 @@ export async function signUp(
 
     if (existingUsername) {
       return {
-        error: "Username already taken",
+        error: "Bu kullanıcı adı zaten alınmış",
       };
     }
 
@@ -58,21 +57,18 @@ export async function signUp(
 
     if (existingEmail) {
       return {
-        error: "Email already taken",
+        error: "Bu e-posta adresi zaten kayıtlı",
       };
     }
 
-    await prisma.$transaction(async (tx: { user: { create: (arg0: { data: { id: string; username: string; displayName: string; email: string; passwordHash: string; }; }) => any; }; }) => {
-      await tx.user.create({
-        data: {
-          id: userId,
-          username,
-          displayName: username,
-          email,
-          passwordHash,
-        },
-      });
-     
+    await prisma.user.create({
+      data: {
+        id: userId,
+        username,
+        displayName: username,
+        email,
+        passwordHash,
+      },
     });
 
     const session = await lucia.createSession(userId, {});
@@ -85,10 +81,9 @@ export async function signUp(
 
     return redirect("/malper");
   } catch (error) {
-    if (isRedirectError(error)) throw error;
     console.error(error);
     return {
-      error: "Something went wrong. Please try again.",
+      error: "Bir şeyler ters gitti. Lütfen tekrar deneyin.",
     };
   }
 }
