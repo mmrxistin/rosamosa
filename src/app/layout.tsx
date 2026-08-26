@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   ],
 };
 // Elhamdulillah Elhamdulillah Elhamdulillah
-// Elhamdulillahi Rabbul Alemin
+// El Hamdu Lillahi Rabbul Alemin
 export default function RootLayout({
   children,
 }: Readonly<{
