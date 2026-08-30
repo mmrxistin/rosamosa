@@ -558,6 +558,7 @@
  // Elhamdulillahirabbilalemin
 
  // La ilahe illALLAH u vahdehu la şerike leh, lehul-mulku ve lehul-hamdu
+ 
  // Yuhyi ve yumit
  // Biyadihil xayr
  // ve huve ala kulli şey'in kadir

@@ -2,7 +2,7 @@
 // Elhamdulillahirabbulalemin
 // Ve salatu ve selamu ala resulina Muhammedin
 // Allah U Ekber, Allah U Ekber, Allah U Ekber, La ilahe illAllah
-// Subhanallah, Elhamdulillah, Allahu Ekber
+// SubhanAllah, Elhamdulillah, Allahu Ekber
 // Estağfirullah El-Azim
 // Allah u Ekber Ve Lillahil Hamd
 "use client"
@@ -32,18 +32,7 @@ function Mmmnavbar() {
             </a>
           </div>
 
-          <div className="flex items-center gap-4 text-xs font-semibold text-zinc-300">
-            <span className="hidden md:inline-block text-zinc-400">
-              {new Date().toLocaleDateString('tr-TR', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}
-            </span>
-            <a href="/login" className="flex items-center gap-1 text-white border border-zinc-700 px-3 py-1 no-underline transition-colors hover:text-white hover:bg-zinc-800">
-              <svg className="size-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" /></svg>
-              Giriş Yap
-            </a>
-            <a href="/signup" className="bg-[#bb1919] px-3 py-1 font-semibold no-underline transition-colors hover:bg-[#901313] text-white">
-              Üye Ol
-            </a>
-          </div>
+         
         </div>
       </div>
 
@@ -57,29 +46,13 @@ function Mmmnavbar() {
                 Ana Sayfa
               </Nav.Link>
               <Nav.Link href="/malper/Yek" className="py-3 px-3 text-zinc-300 border-b-2 border-transparent transition-all hover:border-[#bb1919] hover:text-white">
-                Tümü
+                Hakkımızda
               </Nav.Link>
               <Nav.Link href="/malper/Car" className="py-3 px-3 text-zinc-300 border-b-2 border-transparent transition-all hover:border-[#bb1919] hover:text-white">
-                Gündem
+                İletişim
               </Nav.Link>
-              <Nav.Link href="/malper/se" className="py-3 px-3 text-zinc-300 border-b-2 border-transparent transition-all hover:border-[#bb1919] hover:text-white">
-                Dünya
-              </Nav.Link>
-              <Nav.Link href="/malper/dirok" className="py-3 px-3 text-zinc-300 border-b-2 border-transparent transition-all hover:border-[#bb1919] hover:text-white">
-                Ekonomi
-              </Nav.Link>
-              <Nav.Link href="/malper/xane" className="py-3 px-3 text-zinc-300 border-b-2 border-transparent transition-all hover:border-[#bb1919] hover:text-white">
-                Ekoloji
-              </Nav.Link>
-              <Nav.Link href="/malper/rojname" className="py-3 px-3 text-zinc-300 border-b-2 border-transparent transition-all hover:border-[#bb1919] hover:text-white">
-                Kadın
-              </Nav.Link>
-              <Nav.Link href="/malper/mmmmm" className="py-3 px-3 text-zinc-300 border-b-2 border-transparent transition-all hover:border-[#bb1919] hover:text-white">
-                Yazarlar
-              </Nav.Link>
-              <Nav.Link href="/malper/account" className="py-3 px-3 text-zinc-300 border-b-2 border-transparent transition-all hover:border-[#bb1919] hover:text-white">
-                Forum
-              </Nav.Link>
+            
+            
             </Nav>
           </Navbar.Collapse>
         </Container>
