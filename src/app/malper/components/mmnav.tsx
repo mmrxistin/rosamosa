@@ -45,10 +45,8 @@ function Mmmnavbar() {
               <Nav.Link href="/malper" className="py-3 px-3 text-white border-b-2 border-transparent transition-all hover:border-[#bb1919] hover:text-white">
                 Ana Sayfa
               </Nav.Link>
-              <Nav.Link href="/malper/Yek" className="py-3 px-3 text-zinc-300 border-b-2 border-transparent transition-all hover:border-[#bb1919] hover:text-white">
-                Hakkımızda
-              </Nav.Link>
-              <Nav.Link href="/malper/Car" className="py-3 px-3 text-zinc-300 border-b-2 border-transparent transition-all hover:border-[#bb1919] hover:text-white">
+            
+              <Nav.Link href="#" className="py-3 px-3 text-zinc-300 border-b-2 border-transparent transition-all hover:border-[#bb1919] hover:text-white">
                 İletişim
               </Nav.Link>
             
