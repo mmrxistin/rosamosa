@@ -27,7 +27,7 @@ function Mmmnavbar() {
               <span className="bg-[#bb1919] text-white font-black text-lg px-2 py-0.5 tracking-tighter">İ</span>
               <span className="bg-black border border-zinc-700 text-white font-black text-lg px-2 py-0.5 tracking-tighter">N</span>
               <span className="font-extrabold text-xl text-white ml-2 tracking-tight transition-colors group-hover:text-red-500">
-                YALÇIN İNŞAAT
+                YALÇIN DEKORASYON
               </span>
             </a>
           </div>

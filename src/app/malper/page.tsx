@@ -272,13 +272,13 @@ function page() {
                 <h3 className="text-xl font-bold mb-4 text-[#b80000]">Ücretsiz Keşif ve Teklif İçin</h3>
                 <div className="space-y-3 text-gray-700">
                   <p className="flex items-center gap-2">
-                    <span className="font-bold w-20">Telefon:</span> 0XXX XXX XX XX
+                    <span className="font-bold w-20">Telefon:</span> 05434955957
                   </p>
                   <p className="flex items-center gap-2">
-                    <span className="font-bold w-20">E-posta:</span> info@yalcininsaat.com
+                    <span className="font-bold w-20">E-posta:</span> hakanmajans65@gmail.com
                   </p>
                   <p className="flex items-center gap-2">
-                    <span className="font-bold w-20">Adres:</span> Merkez Mahallesi, İnşaat Caddesi No:4 Levent/İstanbul
+                    <span className="font-bold w-20">Adres:</span> Mustafa Kemal Mahallesi, 694/33 No:9 Buca/İzmir
                   </p>
                 </div>
                 <button className="w-full mt-6 bg-[#b80000] text-white font-bold py-3 rounded hover:bg-[#8e0000] transition-colors">
